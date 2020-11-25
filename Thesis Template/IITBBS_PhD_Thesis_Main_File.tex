@@ -1,0 +1,454 @@
+\documentclass[12pt,a4paper]{report}
+%\documentclass[12pt, twoside,openright]{report}
+\usepackage[]{graphicx}
+%\usepackage{fontspec}
+%\setmainfont{Code2000}
+%\usepackage{,epsfig}
+\usepackage[centertags]{amsmath}
+\usepackage{epstopdf,amsfonts,epsfig,cite,array,multirow,graphicx,amsmath,amsthm,ltablex,tabularx,setspace,arydshln,amssymb,multirow,enumerate}
+%%%%%%% Inline listing package
+%\usepackage[inline]{enumitem}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\sinc}{sinc}
+%\usepackage{marvosym}
+%\usepackage{moderncvcompatibility}
+\usepackage{geometry}
+\geometry{tmargin=20mm,bmargin=20mm,lmargin=30mm,rmargin=25mm}
+%\usepackage[cmex10]{amsmath}
+\newcommand{\matr}[1]{\mathbf{#1}}
+
+%%%%%%%%%%%% Run this package final time or if any error %%%%%%%%%
+%\usepackage{fancyhdr}
+\usepackage[titletoc]{appendix}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{graphics}
+\usepackage{cite}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{relsize}
+\usepackage{bigints}
+\usetikzlibrary{shapes,arrows,fit,calc,positioning}
+\usetikzlibrary{decorations.shapes}
+\definecolor{colorgreen}{rgb}{0.2,0.5,0.3}
+\definecolor{colorblue}{rgb}{0,0,0}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{subfigure}
+%\usepackage{hyperref}
+\usepackage{ellipsis}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathreplacing,decorations.markings,shapes.geometric}
+\tikzset{naming/.style={align=center,font=\small}}
+\tikzset{antenna/.style={colorblue, thick,insert path={-- coordinate (ant#1) ++(0,0.2) -- +(135:0.2) + (0,0) -- +(45:0.2)}}}
+\tikzset{station/.style={naming,draw,shape=dart, thick,colorblue,shape border rotate=90, minimum width=15mm, minimum height=15mm,outer sep=0pt,inner sep=3pt}}
+\tikzset{stationnew/.style={naming,draw,shape=dart, thick,colorblue,shape border rotate=90, minimum width=20mm, minimum height=20mm,outer sep=0pt,inner sep=3pt}}
+%\tikzset{mobile/.style={naming,draw,shape=rectangle,minimum width=15mm,minimum height=7.5mm, outer sep=0pt,inner sep=3pt}}
+\tikzset{mobile/.style={naming,draw,shape=rectangle,fill=olive!40,minimum width=3mm,minimum height=3mm, outer sep=0pt,inner sep=3pt}}
+\tikzset{radiation/.style={{decorate,decoration={expanding waves,angle=90,segment length=4pt}}}}
+\tikzset{
+  double arrow/.style args={#1 colored by #2 and #3}{
+    -stealth,line width=#1,#2, % first arrow
+    postaction={draw,-stealth,#3,line width=(#1)/3,
+                shorten <=(#1)/3,shorten >=2*(#1)/3}, % second arrow
+  }
+}
+
+\tikzset{
+  double dasharrow/.style args={#1 colored by #2 and #3}{
+    -stealth,dashed,line width=#1,#2, % first arrow
+    postaction={draw,-stealth,#3,line width=(#1)/3,
+                shorten <=(#1)/3,shorten >=2*(#1)/3}, % second arrow
+  }
+}
+
+
+
+\newcommand{\UE}[1]{%
+\begin{tikzpicture}[every node/.append style={rectangle,minimum width=0pt}]
+\node[mobile] (box) {#1};
+
+\draw ([xshift=.25cm] box.south west)
+      ([xshift=-.25cm]box.south east);
+
+%\fill ([xshift=.25cm] box.south west) circle (1pt)
+%      ([xshift=-.25cm]box.south east) circle (1pt);
+
+\draw (box.north) [antenna=1];
+\end{tikzpicture}
+}
+
+
+
+\newcommand{\BS}[1]{%
+\begin{tikzpicture}
+\node[station] (base) {#1};
+
+%\draw[line join=bevel] (base.110) -- (base.70) -- (base.north west) -- (base.north east) -- cycle;
+\draw[line join=bevel,colorblue] (base.100) -- (base.80) -- (base.110) -- (base.70) -- (base.north west) -- (base.north east);
+\draw[line join=bevel,colorblue] (base.100) -- (base.70) (base.110) -- (base.north east);
+
+% original yshift=.8pt
+\draw[line cap=rect] ([yshift=0pt]base.north) [antenna=1];
+\end{tikzpicture}
+}
+
+\newcommand{\BSnew}[1]{
+	\begin{tikzpicture}[scale=2.0]
+	\node[stationnew] (base) {#1};
+	
+	\draw[line join=bevel] (base.110) -- (base.70) -- (base.north west) -- (base.north east) -- cycle;
+	\draw[line join=bevel,colorblue] (base.100) -- (base.80) -- (base.110) -- (base.70) -- (base.north west) -- (base.north east);
+	\draw[line join=bevel,colorblue] (base.100) -- (base.70) (base.110) -- (base.north east);
+	
+	% original yshift=.8pt
+	\draw[line cap=rect] ([yshift=0pt]base.north) [antenna=1];
+	\end{tikzpicture}
+}
+
+\newcommand{\RELAY}[1]{%
+\begin{tikzpicture}[scale=0.2]
+%\node[] (naming) {#1};
+            \draw[thick,colorblue] (0,0) -- (1,4);% left line
+            \draw[thick,colorblue] (3,0) -- (2,4);% right line
+            \draw[semithick,colorblue] (0,0) arc (180:0:1.5 and -0.5) node[above, midway]{#1};
+            \node[inner sep=4pt,colorblue] (circ) at (1.5,5.5) {};
+            \draw[semithick,colorblue] (1.5,5.5) circle(8pt);
+            \draw[semithick,colorblue] (1.5,5.5cm-8pt) -- (1.5,4);
+            \draw[semithick,colorblue] (1.5,4) ellipse (0.5 and 0.166);
+            \draw[semithick,radiation,decoration={angle=45}] (1.5cm+8pt,5.5) -- +(0:2);
+            \draw[semithick,radiation,decoration={angle=45}] (1.5cm-8pt,5.5) -- +(180:2);
+            %\fill[color = Aquamarine!80](0,0)--(1,4) -- (2,4)--(3,0)--cycle ;
+
+
+\end{tikzpicture}
+}
+
+\newcommand{\RELAYnew}[1]{%
+	\begin{tikzpicture}[scale=0.25]
+	%\node[] (naming) {#1};
+	\draw[thick,colorblue] (0,0) -- (1,4);% left line
+	\draw[thick,colorblue] (3,0) -- (2,4);% right line
+	\draw[semithick,colorblue] (0,0) arc (180:0:1.5 and -0.5) node[above, midway]{#1};
+	\node[inner sep=4pt,colorblue] (circ) at (1.5,5.5) {};
+	\draw[semithick,colorblue] (1.5,5.5) circle(8pt);
+	\draw[semithick,colorblue] (1.5,5.5cm-8pt) -- (1.5,4);
+	\draw[semithick,colorblue] (1.5,4) ellipse (0.5 and 0.166);
+	\draw[semithick,radiation,decoration={angle=45}] (1.5cm+8pt,5.5) -- +(0:2);
+	\draw[semithick,radiation,decoration={angle=45}] (1.5cm-8pt,5.5) -- +(180:2);
+	%\fill[color = Aquamarine!80](0,0)--(1,4) -- (2,4)--(3,0)--cycle ;
+	
+	
+	\end{tikzpicture}
+}
+
+\newcommand{\MBS}[1]{%
+\begin{tikzpicture}
+\node[stationnew] (base) {#1};
+
+%\draw[line join=bevel] (base.110) -- (base.70) -- (base.north west) -- (base.north east) -- cycle;
+\draw[line join=bevel,colorblue] (base.100) -- (base.80) -- (base.110) -- (base.70) -- (base.north west) -- (base.north east);
+\draw[line join=bevel,colorblue] (base.100) -- (base.70) (base.110) -- (base.north east);
+
+% original yshift=.8pt
+%\draw[line cap=rect] ([xshift=.5cm,yshift=.3pt] base.north) [antenna=1];
+%\draw[line cap=rect] ([yshift=.3pt]ant1 |- base.north) -- node[above,shape=rectangle,inner ysep=+.3333em]{\dots} ([xshift=-.5cm,yshift=.3pt]base.north) [antenna=2];
+\draw[line cap=rect] ([xshift=-.1768cm,yshift=.6pt]base.north -| base.right tail) [antenna=1];
+
+\draw[line cap=rect] ([yshift=.6pt]ant1 |- base.north) -- node[above,shape=rectangle,inner ysep=+.3333em]{\dots} ([xshift=.1768cm,yshift=.6pt]base.north -| base.left tail) [antenna=2];
+
+\draw[line cap=rect] ([yshift=.6pt]ant1 |- base.north) -- node[above,shape=rectangle,inner ysep=+.3333em,]{\dots} ([xshift=.1768cm,yshift=.6pt]base.north -| base.left tail) [antenna=3];
+%\draw[line cap=rect] ([yshift=.3pt]ant1 |- base.north) -- ([xshift=-.5cm,yshift=.3pt]base.north) [antenna=2];
+%\node at ($(ant1)!0.5!(ant2)$) {\dots};
+\end{tikzpicture}
+}
+
+
+\newcommand{\MOBILE}[1]{%
+\begin{tikzpicture}[scale=0.25]
+\begin{scope}[line join=round,looseness=0.25, line cap=round]
+\begin{scope}
+\clip [preaction={left color=blue!10, right color=blue!30}]
+  (1/2,-1) to [bend left] (0,10)
+  to [bend left] ++(1,1) -- ++(0,2)
+  arc (180:0:3/4 and 1/2) -- ++(0,-2)
+  to [bend left]  ++(5,-2) coordinate (A) to [bend left] ++(-1/2,-11)
+  to [bend left] ++(-1,-1) to [bend left] cycle;
+%
+\path [left color=blue!30, right color=blue!50]
+  (A) to [bend left] ++(0,-11) to[bend left] ++(-3/2,-2)
+  -- ++(0,12);
+%
+\path [fill=blue!20, draw=white, line width=0.25cm]
+  (0,10) to [bend left] ++(1,1) -- ++(0,2)
+  arc (180:0:3/4 and 1/2) -- ++(0,-2)
+  to [bend left]  (A) to [bend left] ++(-3/2,-5/4)
+  to [bend right] cycle;
+%
+\draw [line width=0.25cm, fill=white]
+  (9/8,21/2) arc (180:360:5/8 and 3/8) --
+  ++(0,2.5) arc (0:180:5/8 and 3/8) -- cycle;
+%
+\draw [line width=0.25cm, fill=white]
+  (9/8,13) arc (180:360:5/8 and 3/8);
+%
+\fill [white, shift=(225:0.5)]
+  (1,17/2) to [bend left] ++(4,-7/4)
+  to [bend left] ++(0,-7/2) to [bend left] ++(-4, 6/4)
+  to [bend left] cycle;
+%
+\fill [black, shift=(225:0.25)]
+  (1,17/2) to [bend left] ++(4,-7/4)
+  to [bend left] ++(0,-7/2) to [bend left] ++(-4, 6/4)
+  to [bend left] cycle;
+%
+\shade [inner color=white, outer color=cyan!20]
+  (1,17/2) to [bend left] ++(4,-7/4)
+  to [bend left] ++(0,-7/2) to [bend left] ++(-4, 6/4)
+  to [bend left] cycle;
+\draw [line width=0.25cm, shorten <=-0.5cm, shorten >=-0.5cm]
+  (1,17/2) to [bend left] ++(4,-7/4)
+  to [bend left] ++(0,-7/2);
+%
+\foreach \i in {1,2,3}
+  \foreach \j in {1,2,3}
+     \draw [line width=0.125cm, top color=gray,
+       bottom color=white, yslant=-3/8, rounded corners=1cm/8]
+         (\i*3/2-1/2,-\j+4) rectangle ++(1,3/4);
+%
+\draw [line width=0.125cm, top color=gray, bottom color=white, yslant=-3/8]
+  (3,0) ellipse [x radius=1/2, y radius=1/3];
+%
+\draw [line width=0.125cm, top color=gray, bottom color=white, yslant=-3/8]
+  (3,19/2) ellipse [x radius=1, y radius=1/4];
+\end{scope}
+\draw [line width=0.5cm]
+  (1/2,-1) to [bend left] (0,10)
+  to [bend left] ++(1,1) -- ++(0,2)
+  arc (180:0:3/4 and 1/2) -- ++(0,-2)
+  to [bend left]  ++(5,-2) to [bend left] ++(-1/2,-11)
+  to [bend left] ++(-1,-1) to [bend left] cycle;
+\end{scope}%
+
+\end{tikzpicture}
+}
+
+\usepackage[acronym,nomain]{glossaries}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx,subfigure}
+%\usepackage[center]{caption}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%\usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
+
+%\usepackage{algorithm}
+%\usepackage{algorithmic}
+
+\usepackage{dcolumn}
+\usepackage{bigints}
+\usepackage{psfig}
+
+\usepackage{cite}
+%\usepackage{subcaption}
+ \usepackage{notoccite}
+\usepackage{float}
+%\usepackage{subfig}
+%\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{longtable}
+
+%\usepackage{color}   %May be necessary if you want to color links
+%\usepackage{hyperref}
+%\hypersetup{
+%	breaklinks=true,
+%    colorlinks=true, %set true if you want colored links
+%    linktoc=all,     %set to all if you want both sections and subsections linked
+%    linkcolor=black,  %choose some color if you want links to stand out
+%}
+
+\usepackage{hyperref}
+\hypersetup{breaklinks=true, colorlinks=true, linkcolor=black, citecolor=black}
+
+\hypersetup{urlcolor=black}
+
+
+\DeclareMathOperator*{\argmin}{arg\;min}
+\DeclareMathOperator*{\argmax}{arg\;max}
+\newcounter{MYtempeqncnt}
+%\usepackage{url}
+%\usepackage{bbm}
+%\usepackage{eufrak}
+%%%%%%%%%%%%%
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{proposition}{Proposition}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+\newtheorem{definition}{Definition}[chapter]
+
+
+\newcommand\blfootnote[1]{%
+\begingroup
+\renewcommand\thefootnote{}\footnote{#1}%
+\addtocounter{footnote}{-1}%
+\endgroup
+}
+
+
+
+
+% \pagestyle{fancy}
+% \renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+% \fancyhf{}
+ %\lhead{\fancyplain{}{\rightmark }}
+ %\cfoot{\fancyplain{}{\thepage}}
+
+%\doublespacing
+%
+%
+
+%
+%
+\setlength{\parindent}{1em}
+\setlength{\parskip}{1.25em}
+\renewcommand{\baselinestretch}{1.35}
+
+\newtheorem{prop}{Proposition}
+%-------------------------------------------------------------------
+%\renewcommand{\contentsname}{Table of Contents}
+
+%\makeatother
+\usepackage{fancyhdr}
+\usepackage{lipsum}% just to generate text for the example
+%%%%%%%%%% To rename Table of Contents
+\renewcommand{\contentsname}{Contents}
+%%%%%%%%%%
+%\flushbottom
+%--------------------------------------------------------------------------
+\raggedbottom                               % (Remove Unnecessary space b/w paragraphs)
+%--------------------------------------------------------------------------
+\begin{document}
+
+\pagenumbering{roman}
+% --------- Title and abstract etc the front matter -----------
+\input{cover_page}
+\newpage
+%%%%%%%%%%
+\pagenumbering{roman}
+ \include{frontmatter}
+%%%%%%%%%%%%
+\newpage
+\chapter*{\centering Abstract}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{Abstract}}
+\cfoot{\fancyplain{}{\thepage}}
+\addcontentsline{toc}{chapter}{Abstract}
+
+\input{Abstract/abstract}
+%\input{Abstract_2}
+%\newpage\null\newpage
+%\newpage
+%%%%%%% To create single spacing in contents
+%\singlespacing
+\renewcommand{\baselinestretch}{1}
+\pagestyle{fancy}
+\fancyhf{}
+%\rhead{\footnotesize{Contents}}
+\rhead{\fancyplain{}{Contents}}
+\cfoot{\fancyplain{}{\thepage}}
+\tableofcontents
+
+
+%\newpage\null
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{List of Figures}}
+\cfoot{\fancyplain{}{\thepage}}
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+%\newpage
+%\addcontentsline{toc}{chapter}{List of Algorithms}
+%\listofalgorithms
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{List of Tables}}
+\cfoot{\fancyplain{}{\thepage}}
+\addcontentsline{toc}{chapter}{List of Tables}
+\listoftables
+%\newpage\null\newpage
+\newpage
+%\fancyhf{}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{List of Abbreviations}}
+\cfoot{\fancyplain{}{\thepage}}
+%\null\newpage
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\input{glossary_2}
+\newpage
+%\null\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{List of Symbols}}
+\cfoot{\fancyplain{}{\thepage}}
+\addcontentsline{toc}{chapter}{List of Symbols}
+\input{symbols}
+\newpage
+\pagenumbering{arabic}
+%%%%%%%% To create double spacing
+\doublespacing
+\newpage
+\pagestyle{fancy}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername~\thechapter~-~#1}{}}
+\fancyhf{}
+\rhead{\fancyplain{}{\rightmark}}
+\lhead{\fancyplain{}{\leftmark }} 
+\cfoot{\fancyplain{}{\thepage}}
+
+  \input{Chapter_1/chapter_1}
+  \newpage 
+%  %\newpage\null\newpage
+  \input{Chapter_2/chapter_2}
+  \newpage
+%  %\newpage\null\newpage
+%  \input{Chapter_3/chapter_3}
+%  \newpage
+%  %\newpage\null\newpage
+%  \input{Chapter_4/chapter_4}
+% \newpage
+\lhead{}
+\rhead{\footnotesize Appendix}
+\appendix
+\addcontentsline{toc}{chapter}{Appendix}
+\input{Appendices/appendix0}
+%\input{Appendices/appendix1}
+%\input{Appendices/appendix2}
+%\input{Appendices/appendix3}
+  \newpage
+  \singlespacing
+%   %\newpage\null\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{Publications}}
+\cfoot{\fancyplain{}{\thepage}}
+  \addcontentsline{toc}{chapter}{Publications}
+  \input{Publications/PublDDixit}
+  \newpage
+\singlespacing
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{Bibliography}}
+\cfoot{\fancyplain{}{\thepage}}
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{IEEEtran}
+\bibliography{IEEEabrv,bibliography}
+
+
+\end{document}
+
