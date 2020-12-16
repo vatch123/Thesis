@@ -1,23 +1,114 @@
+\chapter{Windowed Coding}
+\graphicspath{{Chapter_2/Vector/}{Chapter_2/}}
 
-\chapter{Title of Chapter 2}
-\graphicspath{{Chapter_1/Vector/}{Chapter_1/}}
-
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+In this chapter, we discuss the \textit{Windowed Coding} scheme introduced in \cite{borkotokyicc} on which this work is based upon.
 
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%
 %%%%%% Chapter 1 Section 1
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%
-\section{Title of Section}
+\section{General Packet and Network Structure}
+\rhead{General Packet and Network Structure}
+The sender generates a information symbol $s_i$ at the current time instant, $i$. Let us assume, $\delta_{max}$ to be the maximum delay tolerance. So, all the symbols generated before the time instant $i - \delta_{max}$ are of no use to the receiver. Multiple symbols are transmitted together as a single packet, instead of transmitting each symbol as seperate packet as done in \cite{DRINEA2013100, Fong}. This is done to utilize the packet structure of LoRa, where the packet duration remains same data size of 1 byte through 4 byte \cite{lora}, allowing to maintain the energy and duty cycle restrictions.
 
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{ErdelyiBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{ErdelyiBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	JakesBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	ExtonBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+Multiple information symbols can be coded together and transmitted to increase redundancy. A \textit{coded} message is formed by XORing $d$ information symbols as in Eq. \ref{coding-eq}. $d$ is known as the coding degree. A coded packet can be decoded at the receiver if $d-1$ packets are already received as in Eq. \ref{decoding-eq}. So, a coded packet can be used to decode at max one symbol, but the advantage of coding is that the retrieved symbol can be any one of the $d$ symbols. 
 
-\subsection{Title of Subsection}
+\begin{equation}
+c_d = s_1 \oplus s_2 .... \oplus s_d
+\label{coding-eq}
+\end{equation}
 
-xxxxxx xxxxxx xxxxxx xxxxxx \cite{	SrivastavaBook}xxxxxx xxxxxx xxxxxx xxxxxx \cite{	PrudnikovBookv4}xxxxxx xxxxxx xxxxxx xxxxxx \cite{	LeeBook1998}	xxxxxx xxxxxx xxxxxx xxxxxx \cite{	RyzhikBook}xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	HoytApr1947} xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+\begin{equation}
+	s_d = c_d \oplus s_1 .... \oplus s_{d-1}
+	\label{decoding-eq}
+\end{equation}
+
+A symbol can be successfully received at the receiver if it is delivered in its raw state or if it can be decoded from a coded packet.
+
+The size of a packet, $b$ is the number of symbols (coded or uncoded) that can be incorporated in a packet. If the maximum size of packet is $l_p$ bits, decided by the duty cycle constraints, and each symbol is $l_s$ bits then the size $b = l_p/l_s$. The first symbol in the packet is always the current symbol i.e the symbol at time $i$. The symbols following it may be coded or uncoded.
+\\
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}
+		\centering
+		\includegraphics[width=12cm,height=8cm, keepaspectratio]{feedback.png}
+		\caption{Structure of the feedback packet}
+		\label{feedback}
+	\end{subfigure}
+	
+	\vspace{5ex}
+	
+	\begin{subfigure}
+		\centering
+		\includegraphics[width=12cm,height=8cm, keepaspectratio]{packet.png}
+		\caption{Packet structure of size 3 when feedback has been received for the previous packet}
+		\label{packet}
+	\end{subfigure}
+	
+	\vspace{5ex}
+	
+	\begin{subfigure}
+		\centering
+		\includegraphics[width=12cm,height=8cm, keepaspectratio]{packet-wf.png}
+		\caption{Packet structure of size 3 when feedback has not been received for the previous packet}
+		\label{packet-wf}
+	\end{subfigure}
+	
+\end{figure}
+
+The sender transmit a packet using one of the structures as shown in Fig. \ref{packet} and Fig. \ref{packet-wf}. The structure of the packet is decided by the coding algorithm described in the next section. The transmissions take place over a erasure channel. The paper \cite{borkotokyicc} describes its results for Bernouli, Gilbert-Elliot and LoRa channels. Every sender may receive a feedback from the receiver with a probability of $p_{feedback}$. The structure of feedback is shown in Fig. \ref{feedback} where the first bit ACK/NACK provides acknowledgement whether the current symbol, $s_i$ was delivered or not. It is followed by two data symbols which contain the sequence number, $u$ of the oldest unexpired symbol and the total number of undelivered unexpired symbols, $\beta$. If all the packets up till the current packet has been received, the feedback will contain $u=i+1$ and $\beta = 0$
 
 
+\section{Coding Scheme}
+\rhead{Coding Scheme}
 
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+The sender at time instant $i$ produces an information symbol $s_i$. To form the packet $\mathbf{p}_i$, the first entry would be the current packet $s_i$. Now it needs to choose how to prepare package $\mathbf{p}_i$. This decision is made based on whether feedback was received for the previous packet $\mathbf{p}_{i-1}$.
+
+\begin{enumerate}
+	\item \textit{Feedback for the packet $\mathbf{p}_{i-1}$ was  received}\\
+		The feedback will inform the sender the oldest undelivered symbol, $u$ and the number of undelivered unexpired symbols, $\beta$ in the range $(i-u, i)$. Then the symbols of the interest to the receiver from a set $\mathbf{w}_i = \{s_u, s_{u+1},..., s_{i-1}\}$. The remaining $b - 1$ spaces are filled based on the below conditions:
+		\begin{enumerate}
+			\item $u = i$: This would mean that all the symbols upto the current symbol have been received by the receiver and nothing extra needs to be sent.
+			\item $u < i, i-u \leq b-1, \beta \geq 1$: This would mean that all the $i-u$ symbols of interest can fit inside the remaining $b-1$ space of the payload $\mathbf{p}_i$. So all the symbols in $\mathbf{w}_i$ are appended to the payload $\mathbf{p}_i$.
+			\item $u < i, i-u > b-1, 1<\beta = i-u$: This would mean that all the $i-u$ symbols are missing and there is not enough space in the payload $\mathbf{p}_i$ to include everything. Since all the symbols in $\mathbf{w}_i$ are missing the first $b-1$ packets are appended to the payload because they are the symbols that will lose their relevance first as compared to others.
+			\item $u < i, i-u > b-1, 1<\beta < i-u$: Here, not all symbols in $\mathbf{w}_i$ are missing, but what symbols are missing is unknown, except for $s_u$. Only the number of missing symbols is known. It is only in this case that coding is performed. So, first the known missing symbol $s_u$ is appended to the packet $\mathbf{p}_i$. Now we have $b-2$ free spaces and $\beta-1$ missing symbols. So the remaining $b-2$ symbols in the payload are coded symbols generated by random linear combination of $d$ elements from the set $\mathbf{w}_i \texttt{\char`\\} \{s_u\}$. The degree is chosen as
+			\begin{equation}
+				d = \argmax_{d'} \frac{\binom{\beta - 1}{1}*\binom{i-u-\beta}{d'-1}}{\binom{i-u}{d'}}
+				\label{main-eq}
+			\end{equation}
+			The above equation aims to choose a degree $d$ which maximizes the probability of decoding of one packet at the receiver. Eq \ref{main-eq} is a crude estimate of the decoding success probability. Recall, that a symbol can be decoded if $d-1$ out of the $d$ symbols are already received. So in Eq. \ref{main-eq}, the number of ways $1$ symbol from the $\beta-1$ missing symbols and the other $d'-1$ symbols from $i-u-\beta$ already received symbols can be chosen is calculated. To find the probability this number is divided by the total number of ways to choose $d'$ symbols from $i-u$ symbols.
+		\end{enumerate}
+	\item \textit{Feedback for the packet $\mathbf{p}_{i-1}$ was  not received}\\
+	If the feedback for the previous packet is not received the oldest undelivered symbol at the moment is unknown. So a set is defined as $\mathbf{b}_i = \{s_{i-1}, s_{i-2},.....,s_{i-z}\}$ where $z = min(i-u_l, i-u_{max})$, $u_l$ is the oldest undelivered sequence in the most recent feedback and $u_{max} = i-\delta_{max}$, the oldest unexpired information symbol at the current instant, $i$. This scenario can also be decomposed into similar cases:
+	\begin{enumerate}
+		\item $z \leq b-1$: The entire vector $\mathbf{b}_i$ can be included in the payload $\mathbf{p}_i$ after the current symbol $s_i$.
+		\item $z > b-1$: This is similar to the case (d) in the feedback case. Here, again the missing symbols are unknown and not all symbols of interest can be incorporated in the payload. Coding of symbols is again employed here but since no other information about the state of the receiver is known, it is assumed that all symbols in the $\mathbf{b}_i$ are equally likely to be missing. So, coded symbols are generated by XORing $D$ symbols from $\mathbf{b}_i$, where $D$ is a uniform random variable between $[1, z]$.	
+	\end{enumerate}
+\end{enumerate}
+
+
+\section{Problems with the scheme}
+\rhead{Problems with the scheme}
+Though this scheme perform really well in practice, there are a few important shortcomings which need to be considered. The packet reception rate is a order of magnitude better when compared against two baselines---repetition redundancy and blind coding scheme. The scheme was evaluated on three erasure channels (Bernouli, Gilbert-Elliot, LoRa) against these baselines. More detailed results can be found in the paper \cite{borkotokyicc}. Here, we focus more on three problems of this scheme and in the next chapter we will describe the steps taken to mitigate them.
+
+\subsection{Degree Selection when coding}
+The degree selection equation (Eq. \ref{main-eq}) is computationally very intensive. As the delay tolerance $\delta_{max}$ will increase the value of $d'$ will increase thus the number of times the $\binom{n}{k}$ operation needs to be done to calculate a single value of $d$ will also increase. The complexity of one $\binom{n}{k}$ operation is approximately $O(min(n^k, n^{n-k}))$ so the complexity of selecting the degree once is approximately
+\[
+O\left(\sum \limits_{d'=1}^{d'=i-u-\beta +1}(i-u-\beta)^{d'-1} * (i-u)^{d'}\right)
+\]
+
+when we only consider the upper bound.
+
+This is unfathomably complex for a low power sensor node to calculate for every transmission. If such a computationally intensive equation is used to calculate the degree most of the battery of the sensor would be consumed in calculating this. One way to avoid this problem which the authors of \cite{borkotokyicc} suggest is using a table of values in memory. This approach is feasible when the delay tolerance $\delta_{max}$ is low because the space complexity of this approach is $O\left(\delta_{max}^2\right)$. For the applications for which this method was first created this condition is usually met. But, in this work we want to do away of this requirement of low $\delta_{max}$ and make a more general coding scheme.
+
+One more issue with the Eq. \ref{main-eq} is that it is only a crude estimate of successful decode probability and is only valid if the packet contains only one coded packet. If a packet contains more than one coded packet this estimate would further drift away from the actual way. To circumvent this, a joint optimization of degree should be done which was not done in \cite{borkotokyicc} to avoid further complexity.
+
+
+\subsection{Feedback}
+The structure of the feedback packet is shown in the Fig. \ref{feedback}. Let us suppose our $\delta_{max} = 16$, which is a fairly common value in an industrial setting and the number of symbols we need to transmit is $10,000$. Then the number of bits required by our feedback would be $1 + 14 + 14 = 29$. One bit for acknowledgement, $14$ bits each to represent the oldest undelivered sequence number and number of undelivered symbols. This approach is not very efficient. Even using $29$ bits or more practically $32$ bits, we could only know about the state of one symbol with surety i.e. $s_u$ and just a cumulative estimate of the state of other symbols. In a way, the feedback is under utilized and more useful information can be packed in it.
+
+\subsection{No-feedback Coding Degree}
+The coding degree chosen when there is no feedback is $D$, which is a uniform random variable between $[1, z]$. The idea behind this is the assumption that all symbols are equally likely to be missing, which is actually not the case. Moreover, in our experiments, choosing this degree randomly underperformed when compared to a fixed degree. In our case, we could get the best performance when this degree was fixed at $2$. This calls to question the theoretical reasoning behind this approach. Further study is needed to get to the actual reason behind this and come up with better methods to choose this degree.
 

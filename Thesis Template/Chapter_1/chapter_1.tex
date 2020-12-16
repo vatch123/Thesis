@@ -1,61 +1,51 @@
-
-\chapter{Title of Chapter 1}
+\chapter{Introduction}
 \graphicspath{{Chapter_1/Vector/}{Chapter_1/}}
 
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+This chapter provides a brief summary of the Application layer which forms an integral part of the TCP/IP and OSI networks models. This chapter also discusses the need of application layer coding and basic description of some schemes already in use. In the proceeding sections, we also discuss our use case along with a description of a previous works already done in this area.
 
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%
 %%%%%% Chapter 1 Section 1
 %%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%
-\section{Title of Section}
+\section{Application Layer}
+\rhead{Application Layer}
 
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{ErdelyiBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{ErdelyiBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	JakesBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	ExtonBook}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+The Transmission Control Protocol (TCP) and the Internet Protocol (IP) forms the backbone of today's internet and other data communication methods. They are collection of protocols that defines how the data is to be packetized, framed, addressed, transmitted, routed and received. All of these various functions are abstracted through various layers each having a specific function. The TCP/IP protocol suite has five layers and application layer is one of them.
 
-\subsection{Title of Subsection}
-
-xxxxxx xxxxxx xxxxxx xxxxxx \cite{	SrivastavaBook}xxxxxx xxxxxx xxxxxx xxxxxx \cite{	PrudnikovBookv4}xxxxxx xxxxxx xxxxxx xxxxxx \cite{	LeeBook1998}	xxxxxx xxxxxx xxxxxx xxxxxx \cite{	RyzhikBook}xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	HoytApr1947} xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
+Application Layer is present at the top of the TCP/IP and OSI models. It is through this layer that a user interacts with the system. It also provides services and interfaces which ensures that an application can communicate with any other application on the same network. Though the name states ``Application Layer'', it should not be thought of a software application rather it is a component of the application which allows it to communicate to other applications on the network through the various lower layers of TCP/IP protocol. It serves to abstract the messy inner steps involved with the lower layers during data communication or transfer. Figure \ref{fig-1.1} shows the various layers involved in the TCP/IP protocol. The application layer protocols provides various functions:
+\begin{itemize}
+	\item \textbf{Identification of Communicating Nodes:} The application layer decides the availability of a node for an application with data to transmit.
+	\item \textbf{Resource availability:} It also decides whether the amount of network resources required for any communication are available.
+	\item \textbf{Synchronization:} It make sures that applications communicating with each other are in sync.
+\end{itemize}
 
 
 %%%%%%%%% Three-Node Cooperative System
 
 \begin{figure*}
 	\centering
-	\includegraphics[width=10cm,height=6cm]{Figure.eps}
-	\caption{Figure Caption}
-	\label{a}
+	\includegraphics[width=5cm,height=8cm, keepaspectratio]{tcp-ip.png}
+	\caption{Various layers of the TCP/IP protocol. The Application Layer sits at the top}
+	\label{fig-1.1}
 \end{figure*}
 
+\newpage
+\section{Problem Formulation and Motivation}
+\rhead{Problem Formulation and Motivation}
+Many wireless networks operate in certain in frequency band where they are subjected to various duty cycle constraints. Moreover, the current trend of building connected devices or systems has made it necessary for using many sensor nodes transmitting data to a receiver for further processing and decision making. So these duty cycle constraints limit the ability of the receiver to transmit feedback about the reception of packets back to the sensors. In a similar fashion, the sensor nodes themselves can only make a limited number of retransmissions for erasure correction. Now, the task of designing an efficient application layer coding scheme which can used in the above scenario becomes challenging, but, if the use cases are delay sensitive then it becomes further complicated. In such a scenario, one data packet generated at the source is of value to receiver only for a certain time frame and after passage of that threshold it becomes useless. Examples of such networks can be found in sensor networks in industries which monitor and control various processes in a plant and where most decisions are made in real-time.
+
+In this thesis, the focus is on a duty cycle and feedback constrained delay sensitive multipoint to point communication. The work is based on creating modifications to an existing coding technique \cite{borkotokyicc}. In our use case, the data generated is valid for a fixed time interval, after which its importance cease to exist. All transmission made by the sensor node can be a uncoded packet (pure information packet or message) or a coded message (a data packet formed by linear combination of two or more messages). Since most sensor are low-powered devices we aim to develop a coding scheme which is computationally cheap and avoids coding packets unless absolutely necessary. The feedback structure of the system is also designed in a way such that maximum information about the receiver state can be transmitted back to the receiver. The design also makes sure that even if feedback is missing coding is done effectively to ensure better packet reception. We limit our design to GF(2) where coding is done by simply XORing two symbols to avoid complex coding schemes in higher order fields.
 
 
+
+\newpage
 \section{Literature Survey}
 \rhead{Literature Survey}
 \label{LiteratureSurvey}
 
-xxxxxx xxxxxx xxxxxx \cite{	SimonBook2006}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx\cite{	Biglieri2006, ProakisBookDC}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx \cite{	PapoulisBook2002}. xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx.
+LT codes \cite{ltcode} and Raptor Codes \cite{raptor} have been used widely due to their strong erasure correction. They operate over a large set of symbols which translates to higher decoding delays. This delay makes them useless for delay-constraints applications. \cite{DRINEA2013100} attempts a coding scheme with smaller blocks of information symbols. They investigate the effectiveness of their approach for networks where a number of senders transmits to a single receiver over an erasure channel but with perfect feedback. They account for the delay constraints but fail to acknowledge the duty cycle constraint in our case. Later,\cite{Fong} introduced a new network adaptive coding scheme for low latency communication. They aimed at reducing both random and burst erasures by coding in a higher order field, namely GF(256). Since, their work focused on streaming applications they could afford coding in such high order fields, but in our resource constraint use case coding in such higher order fields would drastically increase the computational complexity, which would make the sensors power hungry and energy inefficient. Some of the above mentioned problems were addressed in \cite{DaRe}, where they design a coding scheme for LoRaWAN which provides better packet reception and reliability against burst and random errors. The system is designed in complete absence of feedback, which proves to be a vital resource if used efficiently.
 
+The authors of \cite{borkotokyicc} introduce two coding schemes---\textit{Windowed Coding and Selective Coding} for our use cases. Both of the schemes make use of available intermittent feedback along with a unique packet structure and coding scheme. They intelligent decide when to code and how many symbols are to be coded. They also provide steps to perform when feedback is unavailable. This current work is heavily based on the \textit{Windowed Coding} scheme making modifications to it to remove the implicit shortcomings of that approach. The \textit{Windowed Coding} scheme is described in detail in Chapter 2. 
 
-\newpage
-\section{Motivation}
-\rhead{Motivation}
-
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
-
-\newpage
-\section{Problem Formulation}
-\rhead{Problem Formulation}
-
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
-
-\newpage
-\section{Contributions}
-
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
-
-
-\section{Organization}
-\rhead{Organization}
-
-xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx xxxxxx 
 

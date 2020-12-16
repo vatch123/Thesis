@@ -5,7 +5,7 @@
 %\setmainfont{Code2000}
 %\usepackage{,epsfig}
 \usepackage[centertags]{amsmath}
-\usepackage{epstopdf,amsfonts,epsfig,cite,array,multirow,graphicx,amsmath,amsthm,ltablex,tabularx,setspace,arydshln,amssymb,multirow,enumerate}
+\usepackage{epstopdf,amsfonts,epsfig,cite,array,multirow,graphicx,amsmath,amsthm,ltablex,tabularx,setspace,arydshln,amssymb,multirow,enumerate, mathtools}
 %%%%%%% Inline listing package
 %\usepackage[inline]{enumitem}
 \DeclareMathOperator{\arccot}{arccot}
@@ -276,8 +276,8 @@
 \hypersetup{urlcolor=black}
 
 
-\DeclareMathOperator*{\argmin}{arg\;min}
-\DeclareMathOperator*{\argmax}{arg\;max}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
 \newcounter{MYtempeqncnt}
 %\usepackage{url}
 %\usepackage{bbm}
@@ -362,34 +362,34 @@
 \tableofcontents
 
 
-%\newpage\null
-\newpage
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\fancyplain{}{List of Figures}}
-\cfoot{\fancyplain{}{\thepage}}
-\addcontentsline{toc}{chapter}{List of Figures}
-\listoffigures
+%%\newpage\null
 %\newpage
-%\addcontentsline{toc}{chapter}{List of Algorithms}
-%\listofalgorithms
-\newpage
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\fancyplain{}{List of Tables}}
-\cfoot{\fancyplain{}{\thepage}}
-\addcontentsline{toc}{chapter}{List of Tables}
-\listoftables
-%\newpage\null\newpage
-\newpage
+%\pagestyle{fancy}
 %\fancyhf{}
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\fancyplain{}{List of Abbreviations}}
-\cfoot{\fancyplain{}{\thepage}}
-%\null\newpage
-\addcontentsline{toc}{chapter}{List of Abbreviations}
-\input{glossary_2}
+%\rhead{\fancyplain{}{List of Figures}}
+%\cfoot{\fancyplain{}{\thepage}}
+%\addcontentsline{toc}{chapter}{List of Figures}
+%\listoffigures
+%%\newpage
+%%\addcontentsline{toc}{chapter}{List of Algorithms}
+%%\listofalgorithms
+%\newpage
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{\fancyplain{}{List of Tables}}
+%\cfoot{\fancyplain{}{\thepage}}
+%\addcontentsline{toc}{chapter}{List of Tables}
+%\listoftables
+%%\newpage\null\newpage
+%\newpage
+%%\fancyhf{}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{\fancyplain{}{List of Abbreviations}}
+%\cfoot{\fancyplain{}{\thepage}}
+%%\null\newpage
+%\addcontentsline{toc}{chapter}{List of Abbreviations}
+%\input{glossary_2}
 \newpage
 %\null\newpage
 \pagestyle{fancy}
@@ -398,6 +398,7 @@
 \cfoot{\fancyplain{}{\thepage}}
 \addcontentsline{toc}{chapter}{List of Symbols}
 \input{symbols}
+
 \newpage
 \pagenumbering{arabic}
 %%%%%%%% To create double spacing
@@ -417,8 +418,8 @@
   \input{Chapter_2/chapter_2}
   \newpage
 %  %\newpage\null\newpage
-%  \input{Chapter_3/chapter_3}
-%  \newpage
+  \input{Chapter_3/chapter_3}
+  \newpage
 %  %\newpage\null\newpage
 %  \input{Chapter_4/chapter_4}
 % \newpage

@@ -1,17 +1,64 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: IITBBS_PhD_Thesis_Main_File.aux
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: IITBBS_PhD_Thesis_Main_File.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
 A level-1 auxiliary file: frontmatter.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: IEEEtran.bst
+Reallocating 'name_of_file' (item size: 1) to 9 items.
+Reallocating 'name_of_file' (item size: 1) to 13 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: IEEEabrv.bib
 Database file #2: bibliography.bib
-You're missing a field name---line 146 of file bibliography.bib
- :  
- :  %edition =      {2}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Kyosti2015"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author in lora
 
 Done.
-(There was 1 error message)
+You've used 7 entries,
+            4087 wiz_defined-function locations,
+            1262 strings with 16261 characters,
+and the built_in function-call counts, 5461 in all, are:
+= -- 427
+> -- 111
+< -- 43
++ -- 64
+- -- 18
+* -- 257
+:= -- 787
+add.period$ -- 15
+call.type$ -- 7
+change.case$ -- 7
+chr.to.int$ -- 102
+cite$ -- 8
+duplicate$ -- 400
+empty$ -- 469
+format.name$ -- 22
+if$ -- 1296
+int.to.chr$ -- 0
+int.to.str$ -- 7
+missing$ -- 64
+newline$ -- 44
+num.names$ -- 6
+pop$ -- 156
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 2
+skip$ -- 436
+stack$ -- 0
+substring$ -- 262
+swap$ -- 312
+text.length$ -- 9
+text.prefix$ -- 0
+top$ -- 5
+type$ -- 7
+warning$ -- 1
+while$ -- 22
+width$ -- 8
+write$ -- 86
+(There was 1 warning)

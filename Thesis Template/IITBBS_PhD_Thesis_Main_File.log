@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.29)  25 NOV 2020 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.29)  17 DEC 2020 01:02
 entering extended mode
 **./IITBBS_PhD_Thesis_Main_File.tex
 (IITBBS_PhD_Thesis_Main_File.tex
@@ -258,31 +258,64 @@ Package: amssymb 2013/01/14 v3.01 AMS font symbols
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks31
 )
-(C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+(C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
+(C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count271
+\calc@Bcount=\count272
+\calc@Adimen=\dimen165
+\calc@Bdimen=\dimen166
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count273
+\calc@Cskip=\skip65
+)
+(C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count274
+\l_MT_multwidth_dim=\dimen167
+\origjot=\skip66
+\l_MT_shortvdotswithinadjustabove_dim=\dimen168
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen169
+\l_MT_above_intertext_sep=\dimen170
+\l_MT_below_intertext_sep=\dimen171
+\l_MT_above_shortintertext_sep=\dimen172
+\l_MT_below_shortintertext_sep=\dimen173
+\xmathstrut@box=\box54
+\xmathstrut@dim=\dimen174
+) (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count271
-\Gm@cntv=\count272
-\c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen165
-\Gm@wd@mp=\dimen166
-\Gm@odd@mp=\dimen167
-\Gm@even@mp=\dimen168
-\Gm@layoutwidth=\dimen169
-\Gm@layoutheight=\dimen170
-\Gm@layouthoffset=\dimen171
-\Gm@layoutvoffset=\dimen172
+\Gm@cnth=\count275
+\Gm@cntv=\count276
+\c@Gm@tempcnt=\count277
+\Gm@bindingoffset=\dimen175
+\Gm@wd@mp=\dimen176
+\Gm@odd@mp=\dimen177
+\Gm@even@mp=\dimen178
+\Gm@layoutwidth=\dimen179
+\Gm@layoutheight=\dimen180
+\Gm@layouthoffset=\dimen181
+\Gm@layoutvoffset=\dimen182
 \Gm@dimlist=\toks32
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count274
-\c@@ppsavesec=\count275
-\c@@ppsaveapp=\count276
+\c@@pps=\count278
+\c@@ppsavesec=\count279
+\c@@ppsaveapp=\count280
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -312,14 +345,14 @@ y
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common.tex
 \pgfutil@everybye=\toks33
-\pgfutil@tempdima=\dimen173
-\pgfutil@tempdimb=\dimen174
+\pgfutil@tempdima=\dimen183
+\pgfutil@tempdimb=\dimen184
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -common-lists.tex))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
 -latex.def
-\pgfutil@abb=\box54
+\pgfutil@abb=\box55
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -348,26 +381,26 @@ Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 filtered.code.tex
 \pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen175
-\pgf@y=\dimen176
-\pgf@xa=\dimen177
-\pgf@ya=\dimen178
-\pgf@xb=\dimen179
-\pgf@yb=\dimen180
-\pgf@xc=\dimen181
-\pgf@yc=\dimen182
-\pgf@xd=\dimen183
-\pgf@yd=\dimen184
+\pgf@x=\dimen185
+\pgf@y=\dimen186
+\pgf@xa=\dimen187
+\pgf@ya=\dimen188
+\pgf@xb=\dimen189
+\pgf@yb=\dimen190
+\pgf@xc=\dimen191
+\pgf@yc=\dimen192
+\pgf@xd=\dimen193
+\pgf@yd=\dimen194
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count277
-\c@pgf@countb=\count278
-\c@pgf@countc=\count279
-\c@pgf@countd=\count280
+\c@pgf@counta=\count281
+\c@pgf@countb=\count282
+\c@pgf@countc=\count283
+\c@pgf@countd=\count284
 \t@pgf@toka=\toks37
 \t@pgf@tokb=\toks38
 \t@pgf@tokc=\toks39
-\pgf@sys@id@count=\count281
+\pgf@sys@id@count=\count285
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
 fg
@@ -386,8 +419,8 @@ File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 ssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count282
-\pgfsyssoftpath@bigbuffer@items=\count283
+\pgfsyssoftpath@smallbuffer@items=\count286
+\pgfsyssoftpath@bigbuffer@items=\count287
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
 sprotocol.code.tex
@@ -405,9 +438,9 @@ code.tex
 code.tex)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
 r.code.tex
-\pgfmath@dimen=\dimen185
-\pgfmath@count=\count284
-\pgfmath@box=\box55
+\pgfmath@dimen=\dimen195
+\pgfmath@count=\count288
+\pgfmath@box=\box56
 \pgfmath@toks=\toks40
 \pgfmath@stack@operand=\toks41
 \pgfmath@stack@operation=\toks42
@@ -432,59 +465,59 @@ ions.misc.code.tex)
 ions.integerarithmetics.code.tex)))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
 .code.tex
-\c@pgfmathroundto@lastzeros=\count285
+\c@pgfmathroundto@lastzeros=\count289
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
 tex)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen186
-\pgf@picmaxx=\dimen187
-\pgf@picminy=\dimen188
-\pgf@picmaxy=\dimen189
-\pgf@pathminx=\dimen190
-\pgf@pathmaxx=\dimen191
-\pgf@pathminy=\dimen192
-\pgf@pathmaxy=\dimen193
-\pgf@xx=\dimen194
-\pgf@xy=\dimen195
-\pgf@yx=\dimen196
-\pgf@yy=\dimen197
-\pgf@zx=\dimen198
-\pgf@zy=\dimen199
+\pgf@picminx=\dimen196
+\pgf@picmaxx=\dimen197
+\pgf@picminy=\dimen198
+\pgf@picmaxy=\dimen199
+\pgf@pathminx=\dimen256
+\pgf@pathmaxx=\dimen257
+\pgf@pathminy=\dimen258
+\pgf@pathmaxy=\dimen259
+\pgf@xx=\dimen260
+\pgf@xy=\dimen261
+\pgf@yx=\dimen262
+\pgf@yy=\dimen263
+\pgf@zx=\dimen264
+\pgf@zy=\dimen265
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen256
-\pgf@path@lasty=\dimen257
+\pgf@path@lastx=\dimen266
+\pgf@path@lasty=\dimen267
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 epathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen258
-\pgf@shorten@start@additional=\dimen259
+\pgf@shorten@end@additional=\dimen268
+\pgf@shorten@start@additional=\dimen269
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 escopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box56
-\pgf@hbox=\box57
-\pgf@layerbox@main=\box58
-\pgf@picture@serial@count=\count286
+\pgfpic=\box57
+\pgf@hbox=\box58
+\pgf@layerbox@main=\box59
+\pgf@picture@serial@count=\count290
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 egraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen260
+\pgflinewidth=\dimen270
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 etransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen261
-\pgf@pt@y=\dimen262
-\pgf@pt@temp=\dimen263
+\pgf@pt@x=\dimen271
+\pgf@pt@y=\dimen272
+\pgf@pt@temp=\dimen273
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 equick.code.tex
@@ -501,14 +534,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 earrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen264
+\pgfarrowsep=\dimen274
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen265
-\pgf@sys@shading@range@num=\count287
-\pgf@shadingcount=\count288
+\pgf@max=\dimen275
+\pgf@sys@shading@range@num=\count291
+\pgf@shadingcount=\count292
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eimage.code.tex
@@ -517,7 +550,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 eexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box59
+\pgfexternal@startupbox=\box60
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
 elayers.code.tex
@@ -538,7 +571,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 shapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box60
+\pgfnodeparttextbox=\box61
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 plot.code.tex
@@ -547,8 +580,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen266
-\pgf@nodesepend=\dimen267
+\pgf@nodesepstart=\dimen276
+\pgf@nodesepend=\dimen277
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
 mp-version-1-18.sty
@@ -569,8 +602,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
 .tex)
-\pgffor@iter=\dimen268
-\pgffor@skip=\dimen269
+\pgffor@iter=\dimen278
+\pgffor@skip=\dimen279
 \pgffor@stack=\toks43
 \pgffor@toks=\toks44
 ))
@@ -581,34 +614,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count289
-\pgfplotmarksize=\dimen270
+\pgf@plot@mark@count=\count293
+\pgfplotmarksize=\dimen280
 )
-\tikz@lastx=\dimen271
-\tikz@lasty=\dimen272
-\tikz@lastxsaved=\dimen273
-\tikz@lastysaved=\dimen274
-\tikz@lastmovetox=\dimen275
-\tikz@lastmovetoy=\dimen276
-\tikzleveldistance=\dimen277
-\tikzsiblingdistance=\dimen278
-\tikz@figbox=\box61
-\tikz@figbox@bg=\box62
-\tikz@tempbox=\box63
-\tikz@tempbox@bg=\box64
-\tikztreelevel=\count290
-\tikznumberofchildren=\count291
-\tikznumberofcurrentchild=\count292
-\tikz@fig@count=\count293
+\tikz@lastx=\dimen281
+\tikz@lasty=\dimen282
+\tikz@lastxsaved=\dimen283
+\tikz@lastysaved=\dimen284
+\tikz@lastmovetox=\dimen285
+\tikz@lastmovetoy=\dimen286
+\tikzleveldistance=\dimen287
+\tikzsiblingdistance=\dimen288
+\tikz@figbox=\box62
+\tikz@figbox@bg=\box63
+\tikz@tempbox=\box64
+\tikz@tempbox@bg=\box65
+\tikztreelevel=\count294
+\tikznumberofchildren=\count295
+\tikznumberofcurrentchild=\count296
+\tikz@fig@count=\count297
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 matrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count294
-\pgfmatrixcurrentcolumn=\count295
-\pgf@matrix@numberofcolumns=\count296
+\pgfmatrixcurrentrow=\count298
+\pgfmatrixcurrentcolumn=\count299
+\pgf@matrix@numberofcolumns=\count300
 )
-\tikz@expandcount=\count297
+\tikz@expandcount=\count301
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibrarytopaths.code.tex
@@ -668,26 +701,26 @@ File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
 pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodepartlowerbox=\box65
-\pgfnodeparttwobox=\box66
-\pgfnodepartthreebox=\box67
-\pgfnodepartfourbox=\box68
-\pgfnodeparttwentybox=\box69
-\pgfnodepartnineteenbox=\box70
-\pgfnodeparteighteenbox=\box71
-\pgfnodepartseventeenbox=\box72
-\pgfnodepartsixteenbox=\box73
-\pgfnodepartfifteenbox=\box74
-\pgfnodepartfourteenbox=\box75
-\pgfnodepartthirteenbox=\box76
-\pgfnodeparttwelvebox=\box77
-\pgfnodepartelevenbox=\box78
-\pgfnodeparttenbox=\box79
-\pgfnodepartninebox=\box80
-\pgfnodeparteightbox=\box81
-\pgfnodepartsevenbox=\box82
-\pgfnodepartsixbox=\box83
-\pgfnodepartfivebox=\box84
+\pgfnodepartlowerbox=\box66
+\pgfnodeparttwobox=\box67
+\pgfnodepartthreebox=\box68
+\pgfnodepartfourbox=\box69
+\pgfnodeparttwentybox=\box70
+\pgfnodepartnineteenbox=\box71
+\pgfnodeparteighteenbox=\box72
+\pgfnodepartseventeenbox=\box73
+\pgfnodepartsixteenbox=\box74
+\pgfnodepartfifteenbox=\box75
+\pgfnodepartfourteenbox=\box76
+\pgfnodepartthirteenbox=\box77
+\pgfnodeparttwelvebox=\box78
+\pgfnodepartelevenbox=\box79
+\pgfnodeparttenbox=\box80
+\pgfnodepartninebox=\box81
+\pgfnodeparteightbox=\box82
+\pgfnodepartsevenbox=\box83
+\pgfnodepartsixbox=\box84
+\pgfnodepartfivebox=\box85
 )))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryarrows.code.tex
@@ -696,7 +729,7 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
 aryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen279
+\arrowsize=\dimen289
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
 z/libraries\tikzlibraryfit.code.tex
@@ -716,16 +749,16 @@ z/libraries\tikzlibrarydecorations.shapes.code.tex
 z/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
 decorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen280
-\pgfdecoratedremainingdistance=\dimen281
-\pgfdecoratedinputsegmentcompleteddistance=\dimen282
-\pgfdecoratedinputsegmentremainingdistance=\dimen283
-\pgf@decorate@distancetomove=\dimen284
-\pgf@decorate@repeatstate=\count298
-\pgfdecorationsegmentamplitude=\dimen285
-\pgfdecorationsegmentlength=\dimen286
+\pgfdecoratedcompleteddistance=\dimen290
+\pgfdecoratedremainingdistance=\dimen291
+\pgfdecoratedinputsegmentcompleteddistance=\dimen292
+\pgfdecoratedinputsegmentremainingdistance=\dimen293
+\pgf@decorate@distancetomove=\dimen294
+\pgf@decorate@repeatstate=\count302
+\pgfdecorationsegmentamplitude=\dimen295
+\pgfdecorationsegmentlength=\dimen296
 )
-\tikz@lib@dec@box=\box85
+\tikz@lib@dec@box=\box86
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorat
 ions\pgflibrarydecorations.shapes.code.tex))
@@ -735,24 +768,24 @@ z/libraries\tikzlibrarydecorations.pathmorphing.code.tex
 ions\pgflibrarydecorations.pathmorphing.code.tex))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.sty
 Package: subfigure 2002/07/30 v2.1.4 subfigure package
-\subfigtopskip=\skip63
-\subfigcapskip=\skip64
-\subfigcaptopadj=\dimen287
-\subfigbottomskip=\skip65
-\subfigcapmargin=\dimen288
-\subfiglabelskip=\skip66
-\c@subfigure=\count299
-\c@lofdepth=\count300
-\c@subtable=\count301
-\c@lotdepth=\count302
+\subfigtopskip=\skip67
+\subfigcapskip=\skip68
+\subfigcaptopadj=\dimen297
+\subfigbottomskip=\skip69
+\subfigcapmargin=\dimen298
+\subfiglabelskip=\skip70
+\c@subfigure=\count303
+\c@lofdepth=\count304
+\c@subtable=\count305
+\c@lotdepth=\count306
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.cfg
 )
-\subfig@top=\skip67
-\subfig@bottom=\skip68
+\subfig@top=\skip71
+\subfig@bottom=\skip72
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/ellipsis\ellipsis.sty
 Package: ellipsis 2020/05/22 v1.8 fixes spacing around ellipses (three dots)
@@ -783,7 +816,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks45
 \XKV@tempa@toks=\toks46
 )
-\XKV@depth=\count303
+\XKV@depth=\count307
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/mfirstuc\mfirstuc.sty
@@ -791,7 +824,7 @@ Package: mfirstuc 2017/11/14 v2.06 (NLCT)
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count304
+\etb@tempcnta=\count308
 )
 \@glsmfirst=\toks47
 \@glsmrest=\toks48
@@ -805,7 +838,7 @@ sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
  (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/substr\substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count305
+\c@su@anzahl=\count309
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/datatool\datatool-fp.st
 y
@@ -816,19 +849,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count306
+\actioncount=\count310
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count307
-\FP@xia=\count308
-\FP@xib=\count309
-\FP@xfa=\count310
-\FP@xfb=\count311
-\FP@rega=\count312
-\FP@regb=\count313
-\FP@regs=\count314
-\FP@times=\count315
+\FP@xs=\count311
+\FP@xia=\count312
+\FP@xib=\count313
+\FP@xfa=\count314
+\FP@xfb=\count315
+\FP@rega=\count316
+\FP@regb=\count317
+\FP@regs=\count318
+\FP@times=\count319
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -847,7 +880,7 @@ Package: fp-pas 1994/08/29
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count316
+\FPseed=\count320
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -859,22 +892,22 @@ Package: fp-upn 1996/10/21
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks49
-\@dtl@tmpcount=\count317
-\dtl@tmplength=\skip69
-\dtl@sortresult=\count318
-\@dtl@numgrpsepcount=\count319
-\@dtl@datatype=\count320
-\dtl@codeA=\count321
-\dtl@codeB=\count322
-\@dtl@foreach@level=\count323
+\@dtl@tmpcount=\count321
+\dtl@tmplength=\skip73
+\dtl@sortresult=\count322
+\@dtl@numgrpsepcount=\count323
+\@dtl@datatype=\count324
+\dtl@codeA=\count325
+\dtl@codeB=\count326
+\@dtl@foreach@level=\count327
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/base\glossar
 ies-compatible-307.sty
 Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
 )
-\gls@level=\count324
+\gls@level=\count328
 \@gls@tmpb=\toks50
-\gls@tmplen=\skip70
+\gls@tmplen=\skip74
 \glskeylisttok=\toks51
 \glslabeltok=\toks52
 \glsshorttok=\toks53
@@ -887,13 +920,13 @@ Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-list.sty
 Package: glossary-list 2020/03/19 v4.46 (NLCT)
-\glslistdottedwidth=\skip71
+\glslistdottedwidth=\skip75
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-long.sty
 Package: glossary-long 2020/03/19 v4.46 (NLCT)
-\glsdescwidth=\skip72
-\glspagelistwidth=\skip73
+\glsdescwidth=\skip76
+\glspagelistwidth=\skip77
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-super.sty
@@ -902,26 +935,26 @@ Package: glossary-super 2020/03/19 v4.46 (NLCT)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabul
 ar.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count325
-\ST@wd=\dimen289
-\ST@rightskip=\skip74
-\ST@leftskip=\skip75
-\ST@parfillskip=\skip76
-\ST@pageleft=\dimen290
-\ST@headht=\dimen291
-\ST@tailht=\dimen292
-\ST@pagesofar=\dimen293
-\ST@pboxht=\dimen294
-\ST@lineht=\dimen295
-\ST@prevht=\dimen296
-\ST@toadd=\dimen297
-\ST@dimen=\dimen298
-\ST@pbox=\box86
+\c@tracingst=\count329
+\ST@wd=\dimen299
+\ST@rightskip=\skip78
+\ST@leftskip=\skip79
+\ST@parfillskip=\skip80
+\ST@pageleft=\dimen300
+\ST@headht=\dimen301
+\ST@tailht=\dimen302
+\ST@pagesofar=\dimen303
+\ST@pboxht=\dimen304
+\ST@lineht=\dimen305
+\ST@prevht=\dimen306
+\ST@toadd=\dimen307
+\ST@dimen=\dimen308
+\ST@pbox=\box87
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/glossaries/styles\gloss
 ary-tree.sty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
-\glstreeindent=\skip77
+\glstreeindent=\skip81
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\algpseudoc
 ode.sty
@@ -932,16 +965,16 @@ cx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
-\c@ALG@line=\count326
-\c@ALG@rem=\count327
-\c@ALG@nested=\count328
-\ALG@tlm=\skip78
-\ALG@thistlm=\skip79
-\c@ALG@Lnr=\count329
-\c@ALG@blocknr=\count330
-\c@ALG@storecount=\count331
-\c@ALG@tmpcounter=\count332
-\ALG@tmplength=\skip80
+\c@ALG@line=\count330
+\c@ALG@rem=\count331
+\c@ALG@nested=\count332
+\ALG@tlm=\skip82
+\ALG@thistlm=\skip83
+\c@ALG@Lnr=\count333
+\c@ALG@blocknr=\count334
+\c@ALG@storecount=\count335
+\c@ALG@tmpcounter=\count336
+\ALG@tmplength=\skip84
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 ) (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.sty
@@ -952,28 +985,28 @@ Package: notoccite 2000/07/20
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count333
+\c@float@type=\count337
 \float@exts=\toks55
-\float@box=\box87
+\float@box=\box88
 \@float@everytoks=\toks56
-\@floatcapt=\box88
+\@floatcapt=\box89
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/10/26 v3.5g Customizing captions (AR)
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
-\captionmargin=\dimen299
-\captionmargin@=\dimen300
-\captionwidth=\dimen301
-\caption@tempdima=\dimen302
-\caption@indent=\dimen303
-\caption@parindent=\dimen304
-\caption@hangindent=\dimen305
+\captionmargin=\dimen309
+\captionmargin@=\dimen310
+\captionwidth=\dimen311
+\caption@tempdima=\dimen312
+\caption@indent=\dimen313
+\caption@parindent=\dimen314
+\caption@hangindent=\dimen315
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count334
-\c@continuedfloat=\count335
+\c@caption@flags=\count338
+\c@continuedfloat=\count339
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
@@ -998,9 +1031,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen306
-\Hy@linkcounter=\count336
-\Hy@pagecounter=\count337
+\@linkdim=\dimen316
+\Hy@linkcounter=\count340
+\Hy@pagecounter=\count341
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
@@ -1013,7 +1046,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count338
+\Hy@SavedSpaceFactor=\count342
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -1021,13 +1054,13 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count339
+\c@Hy@tempcnt=\count343
  (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
-\XeTeXLinkMargin=\dimen307
+\XeTeXLinkMargin=\dimen317
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -1037,9 +1070,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count340
-\Field@Width=\dimen308
-\Fld@charsize=\dimen309
+\Fld@menulength=\count344
+\Field@Width=\dimen318
+\Fld@charsize=\dimen319
 Package hyperref Info: Hyper figures OFF on input line 6347.
 Package hyperref Info: Link nesting OFF on input line 6352.
 Package hyperref Info: Hyper index ON on input line 6355.
@@ -1053,9 +1086,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count341
-\c@Item=\count342
-\c@Hfootnote=\count343
+\Hy@abspage=\count345
+\c@Item=\count346
+\c@Hfootnote=\count347
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
@@ -1064,8 +1097,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 )
-\Fld@listcount=\count344
-\c@bookmark@seq@number=\count345
+\Fld@listcount=\count348
+\c@bookmark@seq@number=\count349
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -1078,29 +1111,29 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip81
+\Hy@SectionHShift=\skip85
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 274.
 Package hyperref Info: Option `colorlinks' set `true' on input line 274.
-\c@MYtempeqncnt=\count346
-\c@theorem=\count347
-\c@proposition=\count348
-\c@lemma=\count349
-\c@definition=\count350
-\c@prop=\count351
+\c@MYtempeqncnt=\count350
+\c@theorem=\count351
+\c@proposition=\count352
+\c@lemma=\count353
+\c@definition=\count354
+\c@prop=\count355
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip82
-\f@nch@O@elh=\skip83
-\f@nch@O@erh=\skip84
-\f@nch@O@olh=\skip85
-\f@nch@O@orh=\skip86
-\f@nch@O@elf=\skip87
-\f@nch@O@erf=\skip88
-\f@nch@O@olf=\skip89
-\f@nch@O@orf=\skip90
+\f@nch@headwidth=\skip86
+\f@nch@O@elh=\skip87
+\f@nch@O@erh=\skip88
+\f@nch@O@olh=\skip89
+\f@nch@O@orh=\skip90
+\f@nch@O@elf=\skip91
+\f@nch@O@erf=\skip92
+\f@nch@O@olf=\skip93
+\f@nch@O@orf=\skip94
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
@@ -1109,8 +1142,8 @@ Package: expl3 2020-06-18 L3 programming layer (loader)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 mode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count352
-\l__pdf_internal_box=\box89
+\l__kernel_color_stack_int=\count356
+\l__pdf_internal_box=\box90
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
@@ -1118,10 +1151,10 @@ Package: xparse 2020-05-15 L3 Experimental document command parser
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e-generic.tex
-\l__xparse_current_arg_int=\count353
-\g__xparse_grabber_int=\count354
-\l__xparse_m_args_int=\count355
-\l__xparse_v_nesting_int=\count356
+\l__xparse_current_arg_int=\count357
+\g__xparse_grabber_int=\count358
+\l__xparse_m_args_int=\count359
+\l__xparse_v_nesting_int=\count360
 ))
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -1150,16 +1183,16 @@ LaTeX Font Info:    ... okay on input line 332.
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count357
-\scratchdimen=\dimen310
-\scratchbox=\box90
-\nofMPsegments=\count358
-\nofMParguments=\count359
+\scratchcounter=\count361
+\scratchdimen=\dimen320
+\scratchbox=\box91
+\nofMPsegments=\count362
+\nofMParguments=\count363
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count360
-\MPscratchDim=\dimen311
-\MPnumerator=\count361
-\makeMPintoPDFobject=\count362
+\MPscratchCnt=\count364
+\MPscratchDim=\dimen321
+\MPnumerator=\count365
+\makeMPintoPDFobject=\count366
 \everyMPtoPDFconversion=\toks58
 )
 *geometry* driver: auto-detecting
@@ -1201,7 +1234,7 @@ LaTeX Info: Redefining \dots on input line 332.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box91
+\AtBeginShipoutBox=\box92
 Package hyperref Info: Link coloring ON on input line 332.
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
@@ -1214,7 +1247,7 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count363
+\c@section@level=\count367
 )
 LaTeX Info: Redefining \ref on input line 332.
 LaTeX Info: Redefining \pageref on input line 332.
@@ -1277,74 +1310,118 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[6] (IITBBS_PhD_Thesis_Main_File.lof)
-\tf@lof=\write6
-\openout6 = `IITBBS_PhD_Thesis_Main_File.lof'.
-
- [7
-
-] (IITBBS_PhD_Thesis_Main_File.lot)
-\tf@lot=\write7
-\openout7 = `IITBBS_PhD_Thesis_Main_File.lot'.
+[6] (symbols.tex
+Overfull \hbox (18.50215pt too wide) in alignment at lines 3--21
+ [] [] 
+ []
 
 
-[8
+Overfull \hbox (18.50215pt too wide) has occurred while \output is active
+ [] [] 
+ []
 
-] (glossary_2.tex) [9
-
-] (symbols.tex) [10
+) [7
 
 ] (Chapter_1/chapter_1.tex
 Chapter 1.
 [1
 
 ]
-Package epstopdf Info: Source file: <Figure.eps>
-(epstopdf)                    date: 2019-02-08 14:16:33
-(epstopdf)                    size: 594270 bytes
-(epstopdf)             Output file: <Figure-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-08 15:15:26
-(epstopdf)                    size: 26805 bytes
-(epstopdf)             Command: <epstopdf --outfile=Figure-eps-converted-to.pdf
- Figure.eps>
-(epstopdf)             \includegraphics on input line 25.
-Package epstopdf Info: Output file is already uptodate.
-<Figure-eps-converted-to.pdf, id=205, 408.52625pt x 219.82124pt>
-File: Figure-eps-converted-to.pdf Graphic file (type pdf)
-<use Figure-eps-converted-to.pdf>
-Package pdftex.def Info: Figure-eps-converted-to.pdf  used on input line 25.
-(pdftex.def)             Requested size: 284.53893pt x 170.72194pt.
- [2 <./Figure-eps-converted-to.pdf>] [3] [4]) [5] (Chapter_2/chapter_2.tex
+<Chapter_1/Vector/tcp-ip.png, id=174, 171.64125pt x 332.24126pt>
+File: Chapter_1/Vector/tcp-ip.png Graphic file (type png)
+<use Chapter_1/Vector/tcp-ip.png>
+Package pdftex.def Info: Chapter_1/Vector/tcp-ip.png  used on input line 28.
+(pdftex.def)             Requested size: 117.59448pt x 227.62444pt.
+ [2 <./Chapter_1/Vector/tcp-ip.png>] [3]) [4] (Chapter_2/chapter_2.tex
 Chapter 2.
-[6
-
-]) [7] (Appendices/appendix0.tex
-Appendix A.
-) [8
-
-] (Publications/PublDDixit.tex) [9
-
-] (IITBBS_PhD_Thesis_Main_File.bbl)
-[10
+[5
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 453.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 453.
+Underfull \hbox (badness 10000) in paragraph at lines 29--31
+
+ []
+
+<Chapter_2/Vector/feedback.png, id=218, 372.39125pt x 61.22874pt>
+File: Chapter_2/Vector/feedback.png Graphic file (type png)
+<use Chapter_2/Vector/feedback.png>
+Package pdftex.def Info: Chapter_2/Vector/feedback.png  used on input line 36.
+(pdftex.def)             Requested size: 341.44493pt x 56.14052pt.
+<Chapter_2/Vector/packet.png, id=219, 392.46625pt x 51.19125pt>
+File: Chapter_2/Vector/packet.png Graphic file (type png)
+<use Chapter_2/Vector/packet.png>
+Package pdftex.def Info: Chapter_2/Vector/packet.png  used on input line 45.
+(pdftex.def)             Requested size: 341.45483pt x 44.53758pt.
+<Chapter_2/Vector/packet-wf.png, id=220, 392.46625pt x 51.19125pt>
+File: Chapter_2/Vector/packet-wf.png Graphic file (type png)
+<use Chapter_2/Vector/packet-wf.png>
+Package pdftex.def Info: Chapter_2/Vector/packet-wf.png  used on input line 54.
+
+(pdftex.def)             Requested size: 341.45483pt x 44.53758pt.
+[6 <./Chapter_2/Vector/feedback.png> <./Chapter_2/Vector/packet.png> <./Chapter
+_2/Vector/packet-wf.png>] [7] [8] [9] [10]) [11] (Chapter_3/chapter_3.tex
+Chapter 3.
+
+LaTeX Warning: Citation `ErdelyiBook' on page 12 undefined on input line 13.
+
+
+LaTeX Warning: Citation `ErdelyiBook' on page 12 undefined on input line 13.
+
+
+LaTeX Warning: Citation `JakesBook' on page 12 undefined on input line 13.
+
+
+LaTeX Warning: Citation `ExtonBook' on page 12 undefined on input line 13.
+
+
+LaTeX Warning: Citation `SrivastavaBook' on page 12 undefined on input line 17.
+
+
+
+LaTeX Warning: Citation `PrudnikovBookv4' on page 12 undefined on input line 17
+.
+
+
+LaTeX Warning: Citation `LeeBook1998' on page 12 undefined on input line 17.
+
+
+LaTeX Warning: Citation `RyzhikBook' on page 12 undefined on input line 17.
+
+
+LaTeX Warning: Citation `HoytApr1947' on page 12 undefined on input line 17.
+
+[12
+
+]) [13] (Appendices/appendix0.tex
+Appendix A.
+) [14
+
+] (Publications/PublDDixit.tex) [15
+
+] (IITBBS_PhD_Thesis_Main_File.bbl)
+[16
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
  (IITBBS_PhD_Thesis_Main_File.aux (frontmatter.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 453.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 453.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
 Package rerunfilecheck Info: File `IITBBS_PhD_Thesis_Main_File.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: EC02B2C6431634B2C5BA8D41C941ABBF;1263.
+(rerunfilecheck)             Checksum: 483BC3647AB7E38F0DAB10231E42C366;1358.
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 28013 strings out of 480790
- 554553 string characters out of 2897301
- 1041607 words of memory out of 3000000
- 43266 multiletter control sequences out of 15000+200000
- 540458 words of font info for 53 fonts, out of 3000000 for 9000
+ 28604 strings out of 480790
+ 564923 string characters out of 2897301
+ 1056217 words of memory out of 3000000
+ 43830 multiletter control sequences out of 15000+200000
+ 541584 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,97p,1029b,345s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,97p,1536b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vatsa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1357,11 +1434,13 @@ AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
 s/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><
 C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
 y10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/symbols/msbm10.pfb>
-Output written on IITBBS_PhD_Thesis_Main_File.pdf (21 pages, 334250 bytes).
+ts/cm/cmsy6.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmti12.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on IITBBS_PhD_Thesis_Main_File.pdf (24 pages, 366051 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 69 named destinations out of 1000 (max. 500000)
- 207 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 81 named destinations out of 1000 (max. 500000)
+ 222 words of extra memory for PDF output out of 10000 (max. 10000000)
 
