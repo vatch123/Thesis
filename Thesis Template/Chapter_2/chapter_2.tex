@@ -1,4 +1,5 @@
 \chapter{Windowed Coding}
+\label{chap-2}
 \graphicspath{{Chapter_2/Vector/}{Chapter_2/}}
 
 In this chapter, we discuss the \textit{Windowed Coding} scheme introduced in \cite{borkotokyicc} on which this work is based upon.
@@ -24,7 +25,7 @@ c_d = s_1 \oplus s_2 .... \oplus s_d
 	\label{decoding-eq}
 \end{equation}
 
-A symbol can be successfully received at the receiver if it is delivered in its raw state or if it can be decoded from a coded packet.
+A symbol can be successfully received at the receiver if it is delivered in its raw state or if it can be decoded from a coded symbol.
 
 The size of a packet, $b$ is the number of symbols (coded or uncoded) that can be incorporated in a packet. If the maximum size of packet is $l_p$ bits, decided by the duty cycle constraints, and each symbol is $l_s$ bits then the size $b = l_p/l_s$. The first symbol in the packet is always the current symbol i.e the symbol at time $i$. The symbols following it may be coded or uncoded.
 \\
@@ -90,11 +91,13 @@ The sender at time instant $i$ produces an information symbol $s_i$. To form the
 
 
 \section{Problems with the scheme}
+\label{problems}
 \rhead{Problems with the scheme}
 Though this scheme perform really well in practice, there are a few important shortcomings which need to be considered. The packet reception rate is a order of magnitude better when compared against two baselines---repetition redundancy and blind coding scheme. The scheme was evaluated on three erasure channels (Bernouli, Gilbert-Elliot, LoRa) against these baselines. More detailed results can be found in the paper \cite{borkotokyicc}. Here, we focus more on three problems of this scheme and in the next chapter we will describe the steps taken to mitigate them.
 
 \subsection{Degree Selection when coding}
-The degree selection equation (Eq. \ref{main-eq}) is computationally very intensive. As the delay tolerance $\delta_{max}$ will increase the value of $d'$ will increase thus the number of times the $\binom{n}{k}$ operation needs to be done to calculate a single value of $d$ will also increase. The complexity of one $\binom{n}{k}$ operation is approximately $O(min(n^k, n^{n-k}))$ so the complexity of selecting the degree once is approximately
+\label{degree-selection}
+The degree selection equation (Eq. \ref{main-eq}) is computationally very intensive. As the delay tolerance $\delta_{max}$ will increase the value of $d'$ will increase thus the number of times the $\binom{n}{k}$ operation needs to be done to calculate a single value of $d$ will also increase. The complexity of one $\binom{n}{k}$ operation is approximately $O(min(n^k, n^{n-k})) \simeq O(n^k)$ so the complexity of selecting the degree once is approximately
 \[
 O\left(\sum \limits_{d'=1}^{d'=i-u-\beta +1}(i-u-\beta)^{d'-1} * (i-u)^{d'}\right)
 \]
@@ -107,8 +110,10 @@ One more issue with the Eq. \ref{main-eq} is that it is only a crude estimate of
 
 
 \subsection{Feedback}
+\label{feedback-issue}
 The structure of the feedback packet is shown in the Fig. \ref{feedback}. Let us suppose our $\delta_{max} = 16$, which is a fairly common value in an industrial setting and the number of symbols we need to transmit is $10,000$. Then the number of bits required by our feedback would be $1 + 14 + 14 = 29$. One bit for acknowledgement, $14$ bits each to represent the oldest undelivered sequence number and number of undelivered symbols. This approach is not very efficient. Even using $29$ bits or more practically $32$ bits, we could only know about the state of one symbol with surety i.e. $s_u$ and just a cumulative estimate of the state of other symbols. In a way, the feedback is under utilized and more useful information can be packed in it.
 
 \subsection{No-feedback Coding Degree}
+\label{no-fd}
 The coding degree chosen when there is no feedback is $D$, which is a uniform random variable between $[1, z]$. The idea behind this is the assumption that all symbols are equally likely to be missing, which is actually not the case. Moreover, in our experiments, choosing this degree randomly underperformed when compared to a fixed degree. In our case, we could get the best performance when this degree was fixed at $2$. This calls to question the theoretical reasoning behind this approach. Further study is needed to get to the actual reason behind this and come up with better methods to choose this degree.
 

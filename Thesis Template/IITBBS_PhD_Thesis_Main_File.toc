@@ -2,7 +2,8 @@
 \contentsline {chapter}{Declaration}{ii}{Doc-Start}%
 \contentsline {chapter}{Acknowledgments}{iii}{Item.6}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.1}%
-\contentsline {chapter}{List of Symbols}{vii}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{vii}{chapter*.2}%
+\contentsline {chapter}{List of Symbols}{ix}{chapter*.3}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Application Layer}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Formulation and Motivation}{3}{section.1.2}%
@@ -15,9 +16,10 @@
 \contentsline {subsection}{\numberline {2.3.2}Feedback}{10}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}No-feedback Coding Degree}{11}{subsection.2.3.3}%
 \contentsline {chapter}{\numberline {3}Improved Windowed Coding}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Title of Section}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Title of Subsection}{12}{subsection.3.1.1}%
-\contentsline {chapter}{Appendix}{14}{subsection.3.1.1}%
-\contentsline {chapter}{\numberline {A}}{14}{appendix.A}%
-\contentsline {chapter}{Publications}{15}{equation.A.0.1}%
-\contentsline {chapter}{Bibliography}{16}{Item.19}%
+\contentsline {section}{\numberline {3.1}Experimental Setup}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Improvements}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Improved Coding Degree Selection}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Improvised Feedback}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}No feedback degree selection}{19}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Future Works}{20}{section.3.3}%
+\contentsline {chapter}{Bibliography}{22}{section.3.3}%

@@ -278,6 +278,8 @@
 
 \DeclareMathOperator*{\argmin}{argmin}
 \DeclareMathOperator*{\argmax}{argmax}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
 \newcounter{MYtempeqncnt}
 %\usepackage{url}
 %\usepackage{bbm}
@@ -363,13 +365,13 @@
 
 
 %%\newpage\null
-%\newpage
-%\pagestyle{fancy}
-%\fancyhf{}
-%\rhead{\fancyplain{}{List of Figures}}
-%\cfoot{\fancyplain{}{\thepage}}
-%\addcontentsline{toc}{chapter}{List of Figures}
-%\listoffigures
+\newpage
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\fancyplain{}{List of Figures}}
+\cfoot{\fancyplain{}{\thepage}}
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
 %%\newpage
 %%\addcontentsline{toc}{chapter}{List of Algorithms}
 %%\listofalgorithms
@@ -423,24 +425,24 @@
 %  %\newpage\null\newpage
 %  \input{Chapter_4/chapter_4}
 % \newpage
-\lhead{}
-\rhead{\footnotesize Appendix}
-\appendix
-\addcontentsline{toc}{chapter}{Appendix}
-\input{Appendices/appendix0}
+%\lhead{}
+%\rhead{\footnotesize Appendix}
+%\appendix
+%\addcontentsline{toc}{chapter}{Appendix}
+%\input{Appendices/appendix0}
 %\input{Appendices/appendix1}
 %\input{Appendices/appendix2}
 %\input{Appendices/appendix3}
-  \newpage
-  \singlespacing
-%   %\newpage\null\newpage
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{\fancyplain{}{Publications}}
-\cfoot{\fancyplain{}{\thepage}}
-  \addcontentsline{toc}{chapter}{Publications}
-  \input{Publications/PublDDixit}
-  \newpage
+%  \newpage
+%  \singlespacing
+%%   %\newpage\null\newpage
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{\fancyplain{}{Publications}}
+%\cfoot{\fancyplain{}{\thepage}}
+%  \addcontentsline{toc}{chapter}{Publications}
+%  \input{Publications/PublDDixit}
+%  \newpage
 \singlespacing
 \pagestyle{fancy}
 \fancyhf{}

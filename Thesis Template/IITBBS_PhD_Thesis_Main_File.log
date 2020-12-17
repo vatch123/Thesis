@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.29)  17 DEC 2020 01:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.29)  17 DEC 2020 18:09
 entering extended mode
 **./IITBBS_PhD_Thesis_Main_File.tex
 (IITBBS_PhD_Thesis_Main_File.tex
@@ -1163,22 +1163,22 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 )) (IITBBS_PhD_Thesis_Main_File.aux (frontmatter.aux))
 \openout1 = `IITBBS_PhD_Thesis_Main_File.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 332.
-LaTeX Font Info:    ... okay on input line 332.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 334.
+LaTeX Font Info:    ... okay on input line 334.
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -1230,12 +1230,12 @@ ii
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \dots on input line 332.
+LaTeX Info: Redefining \dots on input line 334.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box92
-Package hyperref Info: Link coloring ON on input line 332.
+Package hyperref Info: Link coloring ON on input line 334.
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1249,16 +1249,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count367
 )
-LaTeX Info: Redefining \ref on input line 332.
-LaTeX Info: Redefining \pageref on input line 332.
-LaTeX Info: Redefining \nameref on input line 332.
+LaTeX Info: Redefining \ref on input line 334.
+LaTeX Info: Redefining \pageref on input line 334.
+LaTeX Info: Redefining \nameref on input line 334.
  (IITBBS_PhD_Thesis_Main_File.out)
 (IITBBS_PhD_Thesis_Main_File.out)
 \@outlinefile=\write4
 \openout4 = `IITBBS_PhD_Thesis_Main_File.out'.
 
  (cover_page.tex
-<iitbbs.png, id=96, 385.44pt x 361.35pt>
+<iitbbs.png, id=104, 385.44pt x 361.35pt>
 File: iitbbs.png Graphic file (type png)
 <use iitbbs.png>
 Package pdftex.def Info: iitbbs.png  used on input line 49.
@@ -1310,7 +1310,13 @@ Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[6] (symbols.tex
+[6] (IITBBS_PhD_Thesis_Main_File.lof [7
+
+])
+\tf@lof=\write6
+\openout6 = `IITBBS_PhD_Thesis_Main_File.lof'.
+
+ [8] (symbols.tex
 Overfull \hbox (18.50215pt too wide) in alignment at lines 3--21
  [] [] 
  []
@@ -1320,127 +1326,227 @@ Overfull \hbox (18.50215pt too wide) has occurred while \output is active
  [] [] 
  []
 
-) [7
+) [9
 
 ] (Chapter_1/chapter_1.tex
 Chapter 1.
 [1
 
 ]
-<Chapter_1/Vector/tcp-ip.png, id=174, 171.64125pt x 332.24126pt>
+<Chapter_1/Vector/tcp-ip.png, id=233, 171.64125pt x 332.24126pt>
 File: Chapter_1/Vector/tcp-ip.png Graphic file (type png)
 <use Chapter_1/Vector/tcp-ip.png>
-Package pdftex.def Info: Chapter_1/Vector/tcp-ip.png  used on input line 28.
+Package pdftex.def Info: Chapter_1/Vector/tcp-ip.png  used on input line 29.
 (pdftex.def)             Requested size: 117.59448pt x 227.62444pt.
  [2 <./Chapter_1/Vector/tcp-ip.png>] [3]) [4] (Chapter_2/chapter_2.tex
 Chapter 2.
 [5
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 29--31
+Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-<Chapter_2/Vector/feedback.png, id=218, 372.39125pt x 61.22874pt>
+<Chapter_2/Vector/feedback.png, id=275, 372.39125pt x 61.22874pt>
 File: Chapter_2/Vector/feedback.png Graphic file (type png)
 <use Chapter_2/Vector/feedback.png>
-Package pdftex.def Info: Chapter_2/Vector/feedback.png  used on input line 36.
+Package pdftex.def Info: Chapter_2/Vector/feedback.png  used on input line 37.
 (pdftex.def)             Requested size: 341.44493pt x 56.14052pt.
-<Chapter_2/Vector/packet.png, id=219, 392.46625pt x 51.19125pt>
+<Chapter_2/Vector/packet.png, id=276, 392.46625pt x 51.19125pt>
 File: Chapter_2/Vector/packet.png Graphic file (type png)
 <use Chapter_2/Vector/packet.png>
-Package pdftex.def Info: Chapter_2/Vector/packet.png  used on input line 45.
+Package pdftex.def Info: Chapter_2/Vector/packet.png  used on input line 46.
 (pdftex.def)             Requested size: 341.45483pt x 44.53758pt.
-<Chapter_2/Vector/packet-wf.png, id=220, 392.46625pt x 51.19125pt>
+<Chapter_2/Vector/packet-wf.png, id=277, 392.46625pt x 51.19125pt>
 File: Chapter_2/Vector/packet-wf.png Graphic file (type png)
 <use Chapter_2/Vector/packet-wf.png>
-Package pdftex.def Info: Chapter_2/Vector/packet-wf.png  used on input line 54.
+Package pdftex.def Info: Chapter_2/Vector/packet-wf.png  used on input line 55.
 
 (pdftex.def)             Requested size: 341.45483pt x 44.53758pt.
 [6 <./Chapter_2/Vector/feedback.png> <./Chapter_2/Vector/packet.png> <./Chapter
 _2/Vector/packet-wf.png>] [7] [8] [9] [10]) [11] (Chapter_3/chapter_3.tex
 Chapter 3.
-
-LaTeX Warning: Citation `ErdelyiBook' on page 12 undefined on input line 13.
-
-
-LaTeX Warning: Citation `ErdelyiBook' on page 12 undefined on input line 13.
-
-
-LaTeX Warning: Citation `JakesBook' on page 12 undefined on input line 13.
-
-
-LaTeX Warning: Citation `ExtonBook' on page 12 undefined on input line 13.
-
-
-LaTeX Warning: Citation `SrivastavaBook' on page 12 undefined on input line 17.
-
-
-
-LaTeX Warning: Citation `PrudnikovBookv4' on page 12 undefined on input line 17
-.
-
-
-LaTeX Warning: Citation `LeeBook1998' on page 12 undefined on input line 17.
-
-
-LaTeX Warning: Citation `RyzhikBook' on page 12 undefined on input line 17.
-
-
-LaTeX Warning: Citation `HoytApr1947' on page 12 undefined on input line 17.
-
 [12
 
-]) [13] (Appendices/appendix0.tex
-Appendix A.
-) [14
+] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
-] (Publications/PublDDixit.tex) [15
+ []
 
-] (IITBBS_PhD_Thesis_Main_File.bbl)
-[16
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--49
+
+ []
+
+[14] [15]
+Package epstopdf Info: Source file: <Chapter_3/Vector/my_opt.eps>
+(epstopdf)                    date: 2020-12-17 11:19:38
+(epstopdf)                    size: 27494 bytes
+(epstopdf)             Output file: <Chapter_3/Vector/my_opt-eps-converted-to.p
+df>
+(epstopdf)                    date: 2020-12-17 11:19:51
+(epstopdf)                    size: 9640 bytes
+(epstopdf)             Command: <epstopdf --outfile=Chapter_3/Vector/my_opt-eps
+-converted-to.pdf Chapter_3/Vector/my_opt.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/my_opt-eps-converted-to.p
+df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Chapter_3/Vector/my_opt-eps-converted-to.pdf, id=372, 963.6pt x 464.73625pt>
+File: Chapter_3/Vector/my_opt-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter_3/Vector/my_opt-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter_3/Vector/my_opt-eps-converted-to.pdf  used on 
+input line 96.
+(pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
+[16 <./Chapter_3/Vector/my_opt-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Chapter_3/Vector/results-delay=4-feed=4-sw
+itch.eps>
+(epstopdf)                    date: 2020-12-17 13:33:20
+(epstopdf)                    size: 28709 bytes
+(epstopdf)             Output file: <Chapter_3/Vector/results-delay=4-feed=4-sw
+itch-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-17 13:35:00
+(epstopdf)                    size: 8593 bytes
+(epstopdf)             Command: <epstopdf --outfile=Chapter_3/Vector/results-de
+lay=4-feed=4-switch-eps-converted-to.pdf Chapter_3/Vector/results-delay=4-feed=
+4-switch.eps>
+(epstopdf)             \includegraphics on input line 117.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/results-delay=4-feed=4-sw
+itch-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
+ version <1.5> allowed
+<Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf, id=388, 9
+63.6pt x 464.73625pt>
+File: Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf Graph
+ic file (type pdf)
+<use Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter_3/Vector/results-delay=4-feed=4-switch-eps-con
+verted-to.pdf  used on input line 117.
+(pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
+Package epstopdf Info: Source file: <Chapter_3/Vector/results-delay=16-feed=4-s
+witch.eps>
+(epstopdf)                    date: 2020-12-17 13:51:17
+(epstopdf)                    size: 28753 bytes
+(epstopdf)             Output file: <Chapter_3/Vector/results-delay=16-feed=4-s
+witch-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-17 13:52:03
+(epstopdf)                    size: 8602 bytes
+(epstopdf)             Command: <epstopdf --outfile=Chapter_3/Vector/results-de
+lay=16-feed=4-switch-eps-converted-to.pdf Chapter_3/Vector/results-delay=16-fee
+d=4-switch.eps>
+(epstopdf)             \includegraphics on input line 124.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/results-delay=16-feed=4-s
+witch-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mos
+t version <1.5> allowed
+<Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf, id=389, 
+963.6pt x 464.73625pt>
+File: Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf Grap
+hic file (type pdf)
+<use Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter_3/Vector/results-delay=16-feed=4-switch-eps-co
+nverted-to.pdf  used on input line 124.
+(pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
+Package epstopdf Info: Source file: <Chapter_3/Vector/results-delay=16-feed=4-a
+lp=1.5.eps>
+(epstopdf)                    date: 2020-12-17 14:05:34
+(epstopdf)                    size: 28734 bytes
+(epstopdf)             Output file: <Chapter_3/Vector/results-delay=16-feed=4-a
+lp=1.5-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-12-17 14:06:30
+(epstopdf)                    size: 8605 bytes
+(epstopdf)             Command: <epstopdf --outfile=Chapter_3/Vector/results-de
+lay=16-feed=4-alp=1.5-eps-converted-to.pdf Chapter_3/Vector/results-delay=16-fe
+ed=4-alp=1.5.eps>
+(epstopdf)             \includegraphics on input line 131.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/results-delay=16-feed=4-a
+lp=1.5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
+st version <1.5> allowed
+<Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf, id=392,
+ 963.6pt x 464.73625pt>
+File: Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf Gra
+phic file (type pdf)
+<use Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-c
+onverted-to.pdf  used on input line 131.
+(pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
+[17] [18 <./Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf
+> <./Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf>]
+[19 <./Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <Chapter_3/Vector/basic.eps>
+(epstopdf)                    date: 2020-12-17 16:15:31
+(epstopdf)                    size: 28985 bytes
+(epstopdf)             Output file: <Chapter_3/Vector/basic-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2020-12-17 16:19:16
+(epstopdf)                    size: 7861 bytes
+(epstopdf)             Command: <epstopdf --outfile=Chapter_3/Vector/basic-eps-
+converted-to.pdf Chapter_3/Vector/basic.eps>
+(epstopdf)             \includegraphics on input line 146.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/basic-eps-converted-to.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Chapter_3/Vector/basic-eps-converted-to.pdf, id=423, 963.6pt x 464.73625pt>
+File: Chapter_3/Vector/basic-eps-converted-to.pdf Graphic file (type pdf)
+<use Chapter_3/Vector/basic-eps-converted-to.pdf>
+Package pdftex.def Info: Chapter_3/Vector/basic-eps-converted-to.pdf  used on i
+nput line 146.
+(pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
+[20 <./Chapter_3/Vector/basic-eps-converted-to.pdf>]) [21]
+(IITBBS_PhD_Thesis_Main_File.bbl) [22
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 454.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 454.
- (IITBBS_PhD_Thesis_Main_File.aux (frontmatter.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 454.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 454.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
+ (IITBBS_PhD_Thesis_Main_File.aux
+(frontmatter.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
 Package rerunfilecheck Info: File `IITBBS_PhD_Thesis_Main_File.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 483BC3647AB7E38F0DAB10231E42C366;1358.
-
-
-LaTeX Warning: There were undefined references.
-
+(rerunfilecheck)             Checksum: 27828A606DA9DAD69ACFF8ABC2DD1A45;1561.
  ) 
 Here is how much of TeX's memory you used:
- 28604 strings out of 480790
- 564923 string characters out of 2897301
- 1056217 words of memory out of 3000000
- 43830 multiletter control sequences out of 15000+200000
- 541584 words of font info for 58 fonts, out of 3000000 for 9000
+ 28767 strings out of 480790
+ 568858 string characters out of 2897301
+ 1061918 words of memory out of 3000000
+ 43966 multiletter control sequences out of 15000+200000
+ 544503 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,97p,1536b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,97p,1541b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vatsa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vatsa/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/vatsa/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/vatsa/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
-s/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><
-C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
-y10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmsy6.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publi
-c/amsfonts/cm/cmsy8.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/typ
-e1/public/amsfonts/cm/cmti12.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/
-fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on IITBBS_PhD_Thesis_Main_File.pdf (24 pages, 366051 bytes).
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vatsa/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/vatsa
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Use
+rs/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr12.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/vatsa/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vatsa/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/vatsa/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on IITBBS_PhD_Thesis_Main_File.pdf (32 pages, 463619 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 81 named destinations out of 1000 (max. 500000)
- 222 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 263 words of extra memory for PDF output out of 10000 (max. 10000000)
 
