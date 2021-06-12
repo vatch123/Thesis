@@ -1,0 +1,148 @@
+\chapter{Relay}
+\label{relay}
+\graphicspath{{Chapter_4/Vector/}{Chapter_4/}}
+
+Our analysis in preceding chapters has been limited to the study of single source to gateway point to point communication. In this chapter we introduce a relay node between the source and the gateway and we evaluate the performance gain and constraints in such a setting. 
+
+\section{Basic Relay Operations}
+\rhead{Basic Relay Operations}
+
+A relay node in a network is usually tasked with increasing the redundancy and routing the packets generated at the source, when direct transmissions between source and receiver may be hampered or impossible. The sender sends the message packet both to the receiver directly and simultaneously to the relay. Now, if the direct transmission between the source and receiver fails, the relay node may decide to retransmit that packet some time in the future. This leads to the development of an additional redundant path from the source to the receiver. The additional link established is more reliable as the probability of packet loss between source to relay, and, relay to receiver, is smaller than direct source to receiver transmission. This is because the relay is usually placed closer to the source than the receiver is from the source.
+
+\begin{figure}[t]
+	\centering
+	\includegraphics[width=10cm,height=8cm,keepaspectratio]{relay.png}
+	\caption{The additional link established due to relay node.}
+	\label{relay-fig}
+\end{figure}
+
+
+\subsection{Relay Baseline}
+
+It is obvious that if we add a relay in any network the net performance in terms of packet delivery will increase due to the additional path and redundancy. So to evaluate our methods (which would describe later) we need to create a relay baseline against which we would compare our results.
+
+First, we describe a few assumptions on the relay node which we introduce in the network:
+\begin{itemize}
+	\item \textbf{Memory size:} The relay has fixed memory which we describe as the number of maximum source messages it can store. In our case we only keep the uncoded messages which have not yet expired for the relay i.e. in $[s_{i-\delta_{max}}, s_i]$
+	\item \textbf{Transmitted packet size:} The relay will transmit a packet which will contain only $1$ message (coded or uncoded). We fix this to $1$ to make sure that energy consumption at the relay can be kept at a minimum.
+	\item \textbf{Relay transmission interval:} This is the minimum number of messages which the relay must receive before it can transmit a packet.
+	\item \textbf{Packet Success Probability:} It it already known that the channel between the source and relay is more reliable than the channel between source and receiver due to closeness of the relay to the source. But how much reliable? In these experiments we assume that channel between source and relay is two times better than the channel between source and receiver i.e. the packet erasure probability becomes half for the channel between source and relay. Let's assume the packet success probability between source and receiver is $p_s$ then the packet success probability between source and relay will become $1-\frac{1-p_s}{2}$.
+\end{itemize} 
+
+We finally define our relay baseline as the normal windowed coding employed at the source and a relay node which does simple forwarding of one message that it receives. The relay waits to receive one packet from the source and once it is received successfully, the relay transmits it to the gateway. We also abstain from coding at the relay node and thus relay transmits only uncoded message. The relay transmission rate for this node is $1$.
+
+\section{Windowed Coding at Relay}
+\rhead{Windowed Coding at Relay}
+We now employ message coding at the relay intelligently. We create a similar network structure with a source, a relay node and a receiver as in the case of relay baseline. Here both the source and relay node follow the \textit{Windowed Coding} scheme. The relay also receives the feedback from the gateway and since the channel between the relay and gateway is also more reliable the relay receives feedback more frequently as compared to the source.
+
+\subsection{Modifications to Windowed Coding for Relay}
+
+The generic \textit{Windowed Coding} behaves differently when the sender receives a feedback from the receiver and when the feedback is missing. However, the relay does not have all the source symbols in its memory so we can't directly use the nascent Windowed Coding. It may so happen that even if the relay receives a feedback, it may not have required source symbols in its memory to take the desired actions. The general feedback structure as in Fig. \ref{feedback} is used here. The feedback has two important parameters: the \textit{oldest undelivered} symbol, $s_u$ and the \textit{number of missing symbols}, $\beta$ in $[s_u, s_i]$. Based on these values the algorithm decides the degree of coding and choose the symbols to code.
+
+\begin{algorithm}[H]
+	\label{window}
+	\SetAlgoLined
+	\KwResult{Message delivery at the receiver}
+	Generate all the messages at the sender\;
+	\For{all messages at the sender}{
+		\eIf{previous feedback is received}{
+			create a packet while choosing a coding degree using the \ref{eq:8};
+		}{
+			create a packet using the no feedback degree of 2\;
+		}
+	}
+	\caption{Nascent Windowed Coding}
+\end{algorithm}
+
+
+ \begin{algorithm}[H]
+ 	\label{relay-coding}
+ 	\SetAlgoLined
+ 	\KwResult{Message delivery at the receiver}
+ 	Receive the uncoded messages from the source and store in the memory\;
+ 	Discard old messages which do not fit in the memory\;
+ 	\If{number of messages in memory \textbf{greater than equal to} relay transmission interval}{
+ 		\eIf{previous feedback is received \textbf{and} oldest undelivered message in memory}{
+ 			create a packet while choosing a coding degree using the \ref{eq:8};
+ 		}{
+ 			create a packet using the no feedback degree of 2\;
+ 		}
+ 	}
+ 	\caption{Modified Windowed Coding at Relay}
+ \end{algorithm}
+
+ It is quite possible that the relay may not have all the symbols in this range. Suppose the oldest packet which is in relay's memory is $s_{relay}$ such that $s_u$ is older than $s_{relay}$, then is clear that we cannot send $s_u$ directly like we do in nascent \textit{Windowed Coding}. Secondly, the number of missing packets $\beta$ in the interval $[s_u, s_i]$ does not make sense for the interval $[s_{relay}, s_i]$ which is a subset of $[s_u, s_i]$. Thus, the received feedback in this case turns out to be practically useless for the relay to make better decisions. So when this happens we do not utilize the feedback and assume it to be missing and thus create coded packets with degree 2. Finally the relay, sends packets and preform coding following the Algorithm \ref{relay-coding} listed above.
+ 
+\section{Results}
+\rhead{Results}
+
+After setting up our system model we simulate it for various values of relay parameters like \textit{'relay memory size'} and \textit{'relay transmission interval'}, we discover some very interesting correlations. In this section we will only discuss the effects of relay parameters as role of other parameters has already been discussed in previous chapters.
+
+\subsection{Delivery Failure Rate}
+Delivery Failure Rate (DFR) is the ratio of number of messages undelivered to the total number of messages transmitted. We observe that as we increase the \textit{relay memory size} to a limit (a little higher than $\delta_{max}$) the DFR reduces sharply and the coding scheme performs better than the baseline. For lower values of \textit{memory size} the baseline performs very similar to the relay (coding). Similarly, when the \textit{relay transmission interval} is reduced the DFR reduces owing to higher number of transmissions from the relay. Our goal is to get better performance while keeping the number of relay transmission to a minimum. So, the higher the \textit{relay transmission interval} the more energy efficient is the overall scheme. We get better performance than the baseline for reasonably high \textit{relay transmission interval} but the performance deteriorates for very high values. This trend holds irrespective of the type of channel.
+
+\newpage
+% Bernouli
+\begin{figure}[H]
+	\centering
+	\vspace{5ex}
+	\begin{subfigure}
+		\centering
+		\includegraphics[width=15cm,height=10cm,keepaspectratio]{/bernouli/res-m=20-tx=1.png}
+		\caption{Delivery Failure Rate v/s Packet Reception for a Bernouli Erasure Channel: The \textit{relay memory size} is $20$ and \textit{relay transmission interval} is $1$. It is evident that even adding a simple relay will improve the performance as shown in the baseline. However, our scheme performs better than a simple forwarding relay.}
+		\label{relay-res-1}
+	\end{subfigure}
+
+	\vspace{5ex}
+
+	\begin{subfigure}
+		\centering
+		\includegraphics[width=15cm,height=10cm,keepaspectratio]{/bernouli/res-m=20-tx=10.png}
+		\caption{Delivery Failure Rate v/s Packet Reception for Bernouli Erasure Channel:  The \textit{relay memory size} is $20$ and \textit{relay transmission interval} is $10$. Increasing the \textit{relay transmission interval} hampers the performance slightly.}
+		\label{relay-res-2}
+	\end{subfigure}
+\end{figure}
+
+ 
+% Gilbert
+\begin{figure}[H]
+	\centering
+	\vspace{5ex}
+	\begin{subfigure}
+		\centering
+		\includegraphics[width=15cm,height=10cm,keepaspectratio]{/gilbert/res-dfr-m=20-tx=5.png}
+		\caption{Delivery Failure Rate v/s Packet Reception for a Gilbert-Elliot Erasure Channel: The \textit{relay memory size} is $20$ and \textit{relay transmission interval} is $5$. The performance of our method is even better than the Bernouli Channel.}
+		\label{relay-res-3}
+	\end{subfigure}
+
+	\vspace{5ex}
+	
+	\begin{subfigure}[b]
+		\centering
+		\includegraphics[width=15cm,height=10cm,keepaspectratio]{/gilbert/res-dfr-m=20-tx=10.png}
+		\caption{Delivery Failure Rate v/s Packet Reception for Gilbert-Elliot Erasure Channel:  The \textit{relay memory size} is $20$ and \textit{relay transmission interval} is $10$.}
+		\label{relay-res-4}
+	\end{subfigure}
+\end{figure}
+
+
+
+\subsection{Energy Consumption}
+
+Energy consumption is a vital parameter for any wireless communication network since most of the wireless devices run of a battery so it is critical to ensure we no energy is wasted during transmission. Most of the energy is consumed transmission of a packet and is proportional to the length of the packet.	Every transmission in our design is of fixed packet length so if we count the total number of symbols we transmit we can get an approximate value of the total energy consumed. The total energy consumed for the relay setup would obviously be higher due to the presence of two elements which can transmit so comparing it with the cases when there is no relay will not be fair. Thus, we calculate the average energy consumed per transmitting source by dividing the total energy consumed by $2$. We find that the average energy consumed per transmitting source on introducing the relay is smaller when there was no relay (i.e. only a single source). The extra transmissions made by the relay actually reduce the number of direct transmissions made by the source and thus reduce the average consumed by it too.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15cm,height=10cm,keepaspectratio]{/gilbert/res-en-m=20-tx=10.png}
+	\caption{Average Energy Consumed v/s Packet Reception for Gilbert-Elliot Erasure Channel:  The \textit{relay memory size} is $20$ and \textit{relay transmission interval} is $10$.}
+	\label{relay-res-5}
+\end{figure}
+
+\newpage
+\section{Summary}
+\rhead{Summary}
+In this chapter we introduced a relay node in our setup and we found that if we do modified windowed coding at the relay with the symbols available at it we can vast improvements in Delivery Failure Rate and Average Energy Consumption per transmitting source. Introducing a relay in any network improves performance but we demonstrate that our method performs better as compared to introducing a naive relay node in the network.
+
+The goal of this thesis was to improve upon the existing \textit{Windowed Coding Scheme} introduced first in \cite{borkotokyicc}. By the end of it we were able to take substantial steps towards our objective. Finally we introduced a coding scheme or a message transmission protocol which can be utilized in any wireless sensor network to reliably transmit information while being energy and computationally efficient. There are still multiple avenues for improvement namely joint optimization of degree, storing coded messages at relay, buffer at receiver, relay node using the uncoded algorithm, adaptive packet sizes during transmission etc. which are still under our consideration and may help us improve our methods in the future.
+
+

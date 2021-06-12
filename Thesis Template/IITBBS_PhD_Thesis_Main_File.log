@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.29)  17 DEC 2020 18:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.6.29) (preloaded format=pdflatex 2020.9.29)  13 MAY 2021 00:55
 entering extended mode
 **./IITBBS_PhD_Thesis_Main_File.tex
 (IITBBS_PhD_Thesis_Main_File.tex
@@ -1115,25 +1115,72 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 274.
 Package hyperref Info: Option `colorlinks' set `true' on input line 274.
-\c@MYtempeqncnt=\count350
-\c@theorem=\count351
-\c@proposition=\count352
-\c@lemma=\count353
-\c@definition=\count354
-\c@prop=\count355
+
+(C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e
+.sty
+Package: algorithm2e 2017/07/18 v5.2 algorithms environments
+\c@AlgoLine=\count350
+\algocf@hangindent=\skip86
+
+(C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count351
+)
+\skiptotal=\skip87
+\skiplinenumber=\skip88
+\skiprule=\skip89
+\skiphlne=\skip90
+\skiptext=\skip91
+\skiplength=\skip92
+\algomargin=\skip93
+\skipalgocfslide=\skip94
+\algowidth=\dimen320
+\inoutsize=\dimen321
+\inoutindent=\dimen322
+\interspacetitleruled=\dimen323
+\interspacealgoruled=\dimen324
+\interspacetitleboxruled=\dimen325
+\algocf@ruledwidth=\skip95
+\algocf@inoutbox=\box90
+\algocf@inputbox=\box91
+\AlCapSkip=\skip96
+\AlCapHSkip=\skip97
+\algoskipindent=\skip98
+\algocf@nlbox=\box92
+\algocf@hangingbox=\box93
+\algocf@untilbox=\box94
+\algocf@skipuntil=\skip99
+\algocf@capbox=\box95
+\algocf@lcaptionbox=\skip100
+\algoheightruledefault=\skip101
+\algoheightrule=\skip102
+\algotitleheightruledefault=\skip103
+\algotitleheightrule=\skip104
+\c@algocfline=\count352
+\c@algocfproc=\count353
+\c@algocf=\count354
+\algocf@algoframe=\box96
+\algocf@algobox=\box97
+)
+\c@MYtempeqncnt=\count355
+\c@theorem=\count356
+\c@proposition=\count357
+\c@lemma=\count358
+\c@definition=\count359
+\c@prop=\count360
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip86
-\f@nch@O@elh=\skip87
-\f@nch@O@erh=\skip88
-\f@nch@O@olh=\skip89
-\f@nch@O@orh=\skip90
-\f@nch@O@elf=\skip91
-\f@nch@O@erf=\skip92
-\f@nch@O@olf=\skip93
-\f@nch@O@orf=\skip94
+\f@nch@headwidth=\skip105
+\f@nch@O@elh=\skip106
+\f@nch@O@erh=\skip107
+\f@nch@O@olh=\skip108
+\f@nch@O@orh=\skip109
+\f@nch@O@elf=\skip110
+\f@nch@O@erf=\skip111
+\f@nch@O@olf=\skip112
+\f@nch@O@orf=\skip113
 )
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
@@ -1142,8 +1189,8 @@ Package: expl3 2020-06-18 L3 programming layer (loader)
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 mode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count356
-\l__pdf_internal_box=\box90
+\l__kernel_color_stack_int=\count361
+\l__pdf_internal_box=\box98
 ))
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e.sty
@@ -1151,10 +1198,10 @@ Package: xparse 2020-05-15 L3 Experimental document command parser
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
 e-generic.tex
-\l__xparse_current_arg_int=\count357
-\g__xparse_grabber_int=\count358
-\l__xparse_m_args_int=\count359
-\l__xparse_v_nesting_int=\count360
+\l__xparse_current_arg_int=\count362
+\g__xparse_grabber_int=\count363
+\l__xparse_m_args_int=\count364
+\l__xparse_v_nesting_int=\count365
 ))
 Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 
@@ -1163,36 +1210,36 @@ File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 )) (IITBBS_PhD_Thesis_Main_File.aux (frontmatter.aux))
 \openout1 = `IITBBS_PhD_Thesis_Main_File.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 334.
-LaTeX Font Info:    ... okay on input line 334.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 336.
+LaTeX Font Info:    ... okay on input line 336.
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count361
-\scratchdimen=\dimen320
-\scratchbox=\box91
-\nofMPsegments=\count362
-\nofMParguments=\count363
+\scratchcounter=\count366
+\scratchdimen=\dimen326
+\scratchbox=\box99
+\nofMPsegments=\count367
+\nofMParguments=\count368
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count364
-\MPscratchDim=\dimen321
-\MPnumerator=\count365
-\makeMPintoPDFobject=\count366
+\MPscratchCnt=\count369
+\MPscratchDim=\dimen327
+\MPnumerator=\count370
+\makeMPintoPDFobject=\count371
 \everyMPtoPDFconversion=\toks58
 )
 *geometry* driver: auto-detecting
@@ -1230,12 +1277,12 @@ ii
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-LaTeX Info: Redefining \dots on input line 334.
+LaTeX Info: Redefining \dots on input line 336.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\AtBeginShipoutBox=\box92
-Package hyperref Info: Link coloring ON on input line 334.
+\AtBeginShipoutBox=\box100
+Package hyperref Info: Link coloring ON on input line 336.
 
 (C:\Users\vatsa\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1247,18 +1294,18 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 lestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count367
+\c@section@level=\count372
 )
-LaTeX Info: Redefining \ref on input line 334.
-LaTeX Info: Redefining \pageref on input line 334.
-LaTeX Info: Redefining \nameref on input line 334.
+LaTeX Info: Redefining \ref on input line 336.
+LaTeX Info: Redefining \pageref on input line 336.
+LaTeX Info: Redefining \nameref on input line 336.
  (IITBBS_PhD_Thesis_Main_File.out)
 (IITBBS_PhD_Thesis_Main_File.out)
 \@outlinefile=\write4
 \openout4 = `IITBBS_PhD_Thesis_Main_File.out'.
 
  (cover_page.tex
-<iitbbs.png, id=104, 385.44pt x 361.35pt>
+<iitbbs.png, id=164, 385.44pt x 361.35pt>
 File: iitbbs.png Graphic file (type png)
 <use iitbbs.png>
 Package pdftex.def Info: iitbbs.png  used on input line 49.
@@ -1299,24 +1346,31 @@ l.58 \newpage
 ])
 (IITBBS_PhD_Thesis_Main_File.toc [5
 
-])
-\tf@toc=\write5
-\openout5 = `IITBBS_PhD_Thesis_Main_File.toc'.
-
-
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
 Make it at least 14.49998pt.
 We now make it that large for the rest of the document.
 This may cause the page layout to be inconsistent, however.
 
-[6] (IITBBS_PhD_Thesis_Main_File.lof [7
+[6])
+\tf@toc=\write5
+\openout5 = `IITBBS_PhD_Thesis_Main_File.toc'.
+
+ [7] (IITBBS_PhD_Thesis_Main_File.lof [8
 
 ])
 \tf@lof=\write6
 \openout6 = `IITBBS_PhD_Thesis_Main_File.lof'.
 
- [8] (symbols.tex
+ [9] [10]
+(IITBBS_PhD_Thesis_Main_File.loa)
+\tf@loa=\write7
+\openout7 = `IITBBS_PhD_Thesis_Main_File.loa'.
+
+ [11
+
+] (symbols.tex
 Overfull \hbox (18.50215pt too wide) in alignment at lines 3--21
  [] [] 
  []
@@ -1326,49 +1380,71 @@ Overfull \hbox (18.50215pt too wide) has occurred while \output is active
  [] [] 
  []
 
-) [9
+) [12
 
 ] (Chapter_1/chapter_1.tex
 Chapter 1.
 [1
 
 ]
-<Chapter_1/Vector/tcp-ip.png, id=233, 171.64125pt x 332.24126pt>
+<Chapter_1/Vector/tcp-ip.png, id=356, 171.64125pt x 332.24126pt>
 File: Chapter_1/Vector/tcp-ip.png Graphic file (type png)
 <use Chapter_1/Vector/tcp-ip.png>
 Package pdftex.def Info: Chapter_1/Vector/tcp-ip.png  used on input line 29.
 (pdftex.def)             Requested size: 117.59448pt x 227.62444pt.
- [2 <./Chapter_1/Vector/tcp-ip.png>] [3]) [4] (Chapter_2/chapter_2.tex
+ [2 <./Chapter_1/Vector/tcp-ip.png>] [3] [4]
+Underfull \hbox (badness 10000) in paragraph at lines 59--61
+
+ []
+
+<Chapter_1/Vector/bernouli.png, id=384, 643.40375pt x 261.97874pt>
+File: Chapter_1/Vector/bernouli.png Graphic file (type png)
+<use Chapter_1/Vector/bernouli.png>
+Package pdftex.def Info: Chapter_1/Vector/bernouli.png  used on input line 64.
+(pdftex.def)             Requested size: 341.44415pt x 139.02795pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--74
+
+ []
+
+[5 <./Chapter_1/Vector/bernouli.png>]
+<Chapter_1/Vector/gilbert.png, id=390, 683.55376pt x 322.20375pt>
+File: Chapter_1/Vector/gilbert.png Graphic file (type png)
+<use Chapter_1/Vector/gilbert.png>
+Package pdftex.def Info: Chapter_1/Vector/gilbert.png  used on input line 77.
+(pdftex.def)             Requested size: 341.44228pt x 160.94415pt.
+) [6 <./Chapter_1/Vector/gilbert.png>]
+(Chapter_2/chapter_2.tex
 Chapter 2.
-[5
+[7
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 30--32
 
  []
 
-<Chapter_2/Vector/feedback.png, id=275, 372.39125pt x 61.22874pt>
+<Chapter_2/Vector/feedback.png, id=412, 372.39125pt x 61.22874pt>
 File: Chapter_2/Vector/feedback.png Graphic file (type png)
 <use Chapter_2/Vector/feedback.png>
 Package pdftex.def Info: Chapter_2/Vector/feedback.png  used on input line 37.
 (pdftex.def)             Requested size: 341.44493pt x 56.14052pt.
-<Chapter_2/Vector/packet.png, id=276, 392.46625pt x 51.19125pt>
+<Chapter_2/Vector/packet.png, id=413, 392.46625pt x 51.19125pt>
 File: Chapter_2/Vector/packet.png Graphic file (type png)
 <use Chapter_2/Vector/packet.png>
 Package pdftex.def Info: Chapter_2/Vector/packet.png  used on input line 46.
 (pdftex.def)             Requested size: 341.45483pt x 44.53758pt.
-<Chapter_2/Vector/packet-wf.png, id=277, 392.46625pt x 51.19125pt>
+<Chapter_2/Vector/packet-wf.png, id=414, 392.46625pt x 51.19125pt>
 File: Chapter_2/Vector/packet-wf.png Graphic file (type png)
 <use Chapter_2/Vector/packet-wf.png>
 Package pdftex.def Info: Chapter_2/Vector/packet-wf.png  used on input line 55.
 
 (pdftex.def)             Requested size: 341.45483pt x 44.53758pt.
-[6 <./Chapter_2/Vector/feedback.png> <./Chapter_2/Vector/packet.png> <./Chapter
-_2/Vector/packet-wf.png>] [7] [8] [9] [10]) [11] (Chapter_3/chapter_3.tex
+[8 <./Chapter_2/Vector/feedback.png> <./Chapter_2/Vector/packet.png> <./Chapter
+_2/Vector/packet-wf.png>] [9] [10] [11] [12]) [13] (Chapter_3/chapter_3.tex
 Chapter 3.
-[12
+[14
 
-] [13]
+] [15]
 Underfull \hbox (badness 10000) in paragraph at lines 35--38
 
  []
@@ -1378,7 +1454,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 46--49
 
  []
 
-[14] [15]
+[16] [17]
 Package epstopdf Info: Source file: <Chapter_3/Vector/my_opt.eps>
 (epstopdf)                    date: 2020-12-17 11:19:38
 (epstopdf)                    size: 27494 bytes
@@ -1394,13 +1470,13 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/my_opt-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Chapter_3/Vector/my_opt-eps-converted-to.pdf, id=372, 963.6pt x 464.73625pt>
+<Chapter_3/Vector/my_opt-eps-converted-to.pdf, id=508, 963.6pt x 464.73625pt>
 File: Chapter_3/Vector/my_opt-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter_3/Vector/my_opt-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter_3/Vector/my_opt-eps-converted-to.pdf  used on 
 input line 96.
 (pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
-[16 <./Chapter_3/Vector/my_opt-eps-converted-to.pdf>]
+[18 <./Chapter_3/Vector/my_opt-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter_3/Vector/results-delay=4-feed=4-sw
 itch.eps>
 (epstopdf)                    date: 2020-12-17 13:33:20
@@ -1419,7 +1495,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/results-delay=4-feed=4-sw
 itch-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most
  version <1.5> allowed
-<Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf, id=388, 9
+<Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf, id=525, 9
 63.6pt x 464.73625pt>
 File: Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf Graph
 ic file (type pdf)
@@ -1445,7 +1521,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/results-delay=16-feed=4-s
 witch-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mos
 t version <1.5> allowed
-<Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf, id=389, 
+<Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf, id=526, 
 963.6pt x 464.73625pt>
 File: Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf Grap
 hic file (type pdf)
@@ -1471,7 +1547,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/results-delay=16-feed=4-a
 lp=1.5-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
 st version <1.5> allowed
-<Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf, id=392,
+<Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf, id=529,
  963.6pt x 464.73625pt>
 File: Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf Gra
 phic file (type pdf)
@@ -1479,9 +1555,9 @@ phic file (type pdf)
 Package pdftex.def Info: Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-c
 onverted-to.pdf  used on input line 131.
 (pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
-[17] [18 <./Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf
+[19] [20 <./Chapter_3/Vector/results-delay=4-feed=4-switch-eps-converted-to.pdf
 > <./Chapter_3/Vector/results-delay=16-feed=4-switch-eps-converted-to.pdf>]
-[19 <./Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf>]
+[21 <./Chapter_3/Vector/results-delay=16-feed=4-alp=1.5-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <Chapter_3/Vector/basic.eps>
 (epstopdf)                    date: 2020-12-17 16:15:31
 (epstopdf)                    size: 28985 bytes
@@ -1491,40 +1567,99 @@ f>
 (epstopdf)                    size: 7861 bytes
 (epstopdf)             Command: <epstopdf --outfile=Chapter_3/Vector/basic-eps-
 converted-to.pdf Chapter_3/Vector/basic.eps>
-(epstopdf)             \includegraphics on input line 146.
+(epstopdf)             \includegraphics on input line 144.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: pdflatex.exe (file ./Chapter_3/Vector/basic-eps-converted-to.pd
 f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<Chapter_3/Vector/basic-eps-converted-to.pdf, id=423, 963.6pt x 464.73625pt>
+<Chapter_3/Vector/basic-eps-converted-to.pdf, id=560, 963.6pt x 464.73625pt>
 File: Chapter_3/Vector/basic-eps-converted-to.pdf Graphic file (type pdf)
 <use Chapter_3/Vector/basic-eps-converted-to.pdf>
 Package pdftex.def Info: Chapter_3/Vector/basic-eps-converted-to.pdf  used on i
-nput line 146.
+nput line 144.
 (pdftex.def)             Requested size: 426.77895pt x 205.83192pt.
-[20 <./Chapter_3/Vector/basic-eps-converted-to.pdf>]) [21]
-(IITBBS_PhD_Thesis_Main_File.bbl) [22
+[22 <./Chapter_3/Vector/basic-eps-converted-to.pdf>]) [23]
+(Chapter_4/chapter_4.tex
+Chapter 4.
+<Chapter_4/Vector/relay.png, id=574, 563.10374pt x 342.27875pt>
+File: Chapter_4/Vector/relay.png Graphic file (type png)
+<use Chapter_4/Vector/relay.png>
+Package pdftex.def Info: Chapter_4/Vector/relay.png  used on input line 14.
+(pdftex.def)             Requested size: 284.5241pt x 172.94601pt.
+[24
+
+] [25 <./Chapter_4/Vector/relay.png>] [26] [27] [28]
+<Chapter_4/Vector//bernouli/res-m=20-tx=1.png, id=603, 1445.4pt x 732.48656pt>
+File: Chapter_4/Vector//bernouli/res-m=20-tx=1.png Graphic file (type png)
+<use Chapter_4/Vector//bernouli/res-m=20-tx=1.png>
+Package pdftex.def Info: Chapter_4/Vector//bernouli/res-m=20-tx=1.png  used on 
+input line 91.
+(pdftex.def)             Requested size: 426.7863pt x 216.28284pt.
+<Chapter_4/Vector//bernouli/res-m=20-tx=10.png, id=604, 1445.4pt x 732.48656pt>
+
+File: Chapter_4/Vector//bernouli/res-m=20-tx=10.png Graphic file (type png)
+<use Chapter_4/Vector//bernouli/res-m=20-tx=10.png>
+Package pdftex.def Info: Chapter_4/Vector//bernouli/res-m=20-tx=10.png  used on
+ input line 100.
+(pdftex.def)             Requested size: 426.7863pt x 216.28284pt.
+<Chapter_4/Vector//gilbert/res-dfr-m=20-tx=5.png, id=605, 1445.4pt x 732.48656p
+t>
+File: Chapter_4/Vector//gilbert/res-dfr-m=20-tx=5.png Graphic file (type png)
+<use Chapter_4/Vector//gilbert/res-dfr-m=20-tx=5.png>
+Package pdftex.def Info: Chapter_4/Vector//gilbert/res-dfr-m=20-tx=5.png  used 
+on input line 113.
+(pdftex.def)             Requested size: 426.7863pt x 216.28284pt.
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 121--121
+[]\OT1/cmr/m/n/10 (a)
+ []
+
+
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 121--121
+\OT1/cmr/m/n/10 b 
+ []
+
+<Chapter_4/Vector//gilbert/res-dfr-m=20-tx=10.png, id=606, 1445.4pt x 732.48656
+pt>
+File: Chapter_4/Vector//gilbert/res-dfr-m=20-tx=10.png Graphic file (type png)
+<use Chapter_4/Vector//gilbert/res-dfr-m=20-tx=10.png>
+Package pdftex.def Info: Chapter_4/Vector//gilbert/res-dfr-m=20-tx=10.png  used
+ on input line 122.
+(pdftex.def)             Requested size: 426.7863pt x 216.28284pt.
+[29 <./Chapter_4/Vector//bernouli/res-m=20-tx=1.png (PNG copy)> <./Chapter_4/Ve
+ctor//bernouli/res-m=20-tx=10.png (PNG copy)>] [30 <./Chapter_4/Vector//gilbert
+/res-dfr-m=20-tx=5.png (PNG copy)> <./Chapter_4/Vector//gilbert/res-dfr-m=20-tx
+=10.png (PNG copy)>]
+<Chapter_4/Vector//gilbert/res-en-m=20-tx=10.png, id=620, 1445.4pt x 696.35156p
+t>
+File: Chapter_4/Vector//gilbert/res-en-m=20-tx=10.png Graphic file (type png)
+<use Chapter_4/Vector//gilbert/res-en-m=20-tx=10.png>
+Package pdftex.def Info: Chapter_4/Vector//gilbert/res-en-m=20-tx=10.png  used 
+on input line 136.
+(pdftex.def)             Requested size: 426.7863pt x 205.61319pt.
+ [31 <./Chapter_4/Vector//gilbert/res-en-m=20-tx=10.png (PNG copy)>]) [32] (IIT
+BBS_PhD_Thesis_Main_File.bbl) [33
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 456.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 456.
- (IITBBS_PhD_Thesis_Main_File.aux
-(frontmatter.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 456.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 456.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 459.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 459.
+
+(IITBBS_PhD_Thesis_Main_File.aux (frontmatter.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 459.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 459.
 Package rerunfilecheck Info: File `IITBBS_PhD_Thesis_Main_File.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 27828A606DA9DAD69ACFF8ABC2DD1A45;1561.
+(rerunfilecheck)             Checksum: 3167A658F59C1584412C1E6EA25849E0;2526.
  ) 
 Here is how much of TeX's memory you used:
- 28767 strings out of 480790
- 568858 string characters out of 2897301
- 1061918 words of memory out of 3000000
- 43966 multiletter control sequences out of 15000+200000
+ 29758 strings out of 480790
+ 586109 string characters out of 2897301
+ 1086505 words of memory out of 3000000
+ 44884 multiletter control sequences out of 15000+200000
  544503 words of font info for 70 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,13n,97p,1541b,488s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,97p,1541b,493s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vatsa\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1200.pk><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx10.pfb><C:/Users/vatsa/AppData/Local/Programs/MiKTeX/fonts/type1/publ
@@ -1544,9 +1679,9 @@ fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/vatsa/AppData/Local/Programs
 /MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vatsa/AppData/Local/
 Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/vatsa/AppDa
 ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on IITBBS_PhD_Thesis_Main_File.pdf (32 pages, 463619 bytes).
+Output written on IITBBS_PhD_Thesis_Main_File.pdf (46 pages, 1009314 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 99 named destinations out of 1000 (max. 500000)
- 263 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 723 PDF objects out of 1000 (max. 8388607)
+ 143 named destinations out of 1000 (max. 500000)
+ 423 words of extra memory for PDF output out of 10000 (max. 10000000)
 

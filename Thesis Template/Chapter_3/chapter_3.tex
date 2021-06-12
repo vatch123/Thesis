@@ -31,13 +31,13 @@ f(x,y) = \argmax_{d} \left(y\frac{\frac{(x-y)(x-y-1)...(x-y-d+2)}{(d-1)(d-2)...1
 
 
 \[
-f(x,y) = \argmax_{d} 	\left(d*y\frac{(x-y)(x-y-1)...(x-y-d+2)}{x(x-1)(x-2)...(x-d+1)}\right)
+f(x,y) = \argmax_{d} 	\left(d\cdot y\frac{(x-y)(x-y-1)...(x-y-d+2)}{x(x-1)(x-2)...(x-d+1)}\right)
 \]
 \linebreak
 Let us assume we need to maximize $g(x,y)$ with
 
 \begin{equation} \label{eq:2}
-	g(d) = d*y\frac{(x-y)(x-y-1)...(x-y-d+2)}{x(x-1)(x-2)...(x-d+1)}
+	g(d) = d\cdot y\frac{(x-y)(x-y-1)...(x-y-d+2)}{x(x-1)(x-2)...(x-d+1)}
 \end{equation}
 This is only a function of $d$ because $x$ and $y$ are constant at a given time. Take log of this for finding the derivative. In that case:
 
@@ -133,24 +133,26 @@ We can then set a threshold $\alpha_0$. If $\alpha > \alpha_0$ we switch to the 
 	\label{results-feed-3}
 \end{figure}
 
+On subsequent experiments we found that their was no situation or a scenario with different values of $\delta_{max}, l_b$ or $\alpha_0$ where the adaptive method would perform better than the \textit{No Coding} method. In all the experiments we ran the adaptive method was bounded between \textit{Windowed Coding} and \textit{No Coding}. The idea that if more symbols are missing in the range $[s_{u+l_b+1}, s_i]$ we change to \textit{windowed coding} which would allow us to send those symbols as part of the current packet, fails to look into the recency of the missing symbols. The \textit{Window Coding} scheme gives equal priority to all missing symbols but we know that the symbols near $s_u$ will expire earliest and thus should be given higher priority. This is what the \textit{No Coding} method does and thus its performance is better or equal to the \textit{Adaptive} scheme in majority of the cases. 
 
 \subsection{No feedback degree selection}
 
 According to the algorithm of \textit{windowed coding} if feedback for payload $\mathbf{p}_{i-1}$ is not received, then the current payload $\mathbf{p}_{i}$ will contain all coded symbols. The degree of coding is chosen randomly from a uniform distribution between $[1, z]$ where $z = min(i-u_l, i-u_{max})$, $u_l$ is the oldest undelivered sequence in the most recent feedback and $u_{max} = i-\delta_{max}$, the oldest unexpired information symbol at the current instant, $i$. The idea behind this that since no information about the state of symbols is known an assumption is made that all the symbols are equally likely to be missing so a uniform random variable is used to choose the coding degree. But on further thought it is clear that not all symbols have the same probability of missing. The symbols which are older have got more chances in the past to be delivered than recent symbols. In a way the probability of missing should increase for a more recent symbol, but this assumption is only valid if channel erasure is uniform. For Gilbert-Elliot channel where burst errors occur it may be possible that any set of symbols may be lost in a burst and thus no conclusion can be drawn about the missing probability of symbols.
 
-We conduct some experiments with various fixed degrees while coding when no feedback is present. The \textit{Delivery Failure Rate} is quite erratic and sometimes performs even worse than Repetition Redundancy. The best performance is seen when the no feedback coding degree is $2$. There is no clear theoretical understanding why this happens and what should be the optimal no feedback degree for different scenarios. On initial thought, the best performance of $NFD = 2$ can be explained by the decoding process. We know that for successful decoding $d-1$ out of the $d$ combined symbols must already be received. So when the degree is $2$ if anyone among the two is already present decoding is successful but for degree $3$ we would any two of them to be already received and so on for higher degrees. It becomes improbable that atleast $n-1$ symbols are already received for $n$-degree coded symbol as $n$ increases. So most of the transmissions with higher coding degree would not result into a successful deocde and thus the delivery failure rate is higher. 
-
-
-\begin{figure}[t]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=15cm,height=10cm,keepaspectratio]{basic}
-	\caption{Delivery Failure Rate v/s Packet Reception Probability with different values of No Feedback Degree (NFD).}
+	\caption{Delivery Failure Rate v/s Packet Reception Probability with different values of No Feedback Degree (NFD). \textit{'NFD = 1'} does not transmit any redundancy as no coded packet is transmitted. }
 	\label{basic}
 \end{figure}
 
+We conduct some experiments with various fixed degrees while coding when no feedback is present. The \textit{Delivery Failure Rate} for \textit{Windowed Coding} is quite erratic and sometimes performs even worse than Repetition Redundancy. The best performance is seen when the no feedback coding degree is $2$. There is no clear theoretical understanding why this happens and what should be the optimal no feedback degree for different scenarios. Intuitively, the best performance of $NFD = 2$ can be explained by the decoding criteria. We know that for successful decoding $d-1$ out of the $d$ combined symbols must already be received. So when the degree is $2$ if anyone among the two is already present decoding is successful but for degree $3$ we would any two of them to be already received and so on for higher degrees. It becomes improbable that atleast $n-1$ symbols are already received for $n$-degree coded symbol as $n$ increases. So most of the transmissions with higher coding degree would not result into a successful decoding of the message and thus the delivery failure rate is higher for higher degree.
 
-\section{Future Works}
-\rhead{Future Works}
-In the previous section we have described the analysis that has been completed yet. There are many other things to explore. In coming months our focus will be on the adaptive scheme and how it can be further improved. At the moment, there are some issues with the scheme. Furthermore, there is no theoretical ground to degree selection when there is no feedback. We would explore how to quantify the no feedback state and how to choose optimal degree based on the information which we might have from previous feedback. Even when feedback is present the estimate for optimal degree is suboptimal because when a single payload contains more than one coded symbol joint optimization of degree over both the symbols should be looked into. In this work, the focus has been on the \textit{windowed coding} scheme whereas the paper \cite{borkotokyicc} lists one more algorithm---\textit{selective coding}. \textit{Selective coding} should also be looked into to improve its performance. Apart from all this we also need to evaluate our methods on different channel erasure models as currently we are focusing on Bernouli and Gilbert-Elliot channels. Finally, the role of a buffer at the receiver should also be investigated.
+
+
+
+\section{Summary}
+In this chapter we introduced several modifications and improvements to the \textit{Windowed Coding} scheme which improve the \textit{Delivery Failure Rate} as well as computationally cheaper. We introduced the \textit{No coding} scheme (we will refer to it as \textbf{\textit{Uncoded Scheme}} just to get make notation less ambiguous) which due to its feedback structure is more reliable, faster and energy efficient as the number of coded packets are reduced. Secondly, we also improved the nascent \textit{Windowed Coding} scheme by reducing the complexity of degree selection. Though all these modifications are for single point to point communication, we will look into the effect of adding a relay in the subsequent chapters.
+
 
 
